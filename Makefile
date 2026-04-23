@@ -2,7 +2,9 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror -pthread
 NAME = codexion
 
-SRCS = main.c
+SRCS = main.c/
+	utils/utils.c
+	
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)

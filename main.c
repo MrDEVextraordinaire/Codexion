@@ -1,13 +1,26 @@
-#include<stdio.h>
+#include "codexion.h"
 
 int main(int argc, char **argv)
 {
-    char *str = argv[1];
-
-    while (argv)
+    int i = 1;
+    while (argv[i])
     {
-        
+        int parsed = atoi(argv[i]);
+        printf("\nargs: %d\n", parsed);
+        i++;
     }
-    printf("\n%s\n", str);
-    printf("\n%d\n",argc);
+
+
+    printf("\nargc: %d\n",argc-1);
 }
+
+
+
+
+
+
+
+
+
+
+// gettimeofday, usleep, write, malloc, free, printf, fprintf, strcmp, strlen, atoi, memset
