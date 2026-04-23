@@ -1,8 +1,8 @@
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -pthread
+CFLAGS = -Wall -Wextra -Werror -pthread -g
 NAME = codexion
 
-SRCS = main.c/
+SRCS = main.c\
 	utils/utils.c
 	
 OBJS = $(SRCS:.c=.o)
@@ -25,5 +25,8 @@ fclean: clean
 	rm -rf $(NAME)
 
 re: fclean all
+
+rec: fclean all
+	make clean
 
 .PHONY: all, clean, fclean, re
