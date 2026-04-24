@@ -1,5 +1,15 @@
 #include "../includes/codexion.h"
 
+static int validate_refactor_time(char *argv)
+{
+    if (atoi(argv) < 1)
+    {
+        fprintf(stderr, "[Error] time to refactor has to be more than 0\n");
+        return (0);
+    }
+    return (1);
+}
+
 static int validate_scheduler(char *argv)
 {
     if ((strcmp(argv, "fifo") == 0))
@@ -20,12 +30,11 @@ static int validate_scheduler(char *argv)
     return (1);
 }
 
-
 static int all_ints(char **argv)
 {
     int i = 1;
     int j = 0;
-    
+
     while (argv[i] && i < 8)
     {
         j = 0;
@@ -38,8 +47,14 @@ static int all_ints(char **argv)
             }
             j++;
         }
-        i++;    
+        i++;
     }
+    if (atoi(argv[1]) < 1)
+    {
+        fprintf(stderr, "\n[Error] you must have at least one coder\n");
+        return(0);
+    }
+
     return (1);
 }
 
@@ -59,7 +74,9 @@ int parsed_validated(int argc, char **argv)
         return (0);
     if(!all_ints(argv))
         return 0;
+    if (!validate_refactor_time(argv[5]))
+        return (0);
     if (!validate_scheduler(argv[8]))
         return (0);
-    return (0);
+    return (1);
 }
