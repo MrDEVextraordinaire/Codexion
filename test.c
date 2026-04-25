@@ -1,37 +1,44 @@
 #include <stdio.h>
 #include <pthread.h>
-#include <unistd.h>
 
-void* task(void* arg) {
-    char* name = ((char**)arg)[0];
-    int delay = *((int*)((char**)arg)[1]);
+typedef struct {
+    int counter;
+} Shared;
 
-    printf("%s starting\n", name);
-    sleep(delay);
-    printf("%s finished after %d seconds\n", name, delay);
+Shared shared = {0};
 
+void* increment(void* arg) {
+
+    pthread_mutex_t *lock = (pthread_mutex_t *)arg;
+
+    int localc = 0;
+    for (int i = 0; i < 10000000; i++) {
+        localc++;
+    }
+    printf("Thread %lu started\n", (unsigned long)pthread_self());
+
+    pthread_mutex_lock(lock);
+    shared.counter += localc;
+    pthread_mutex_unlock(lock);
+
+    printf("Thread %lu finished\n", (unsigned long)pthread_self());
     return NULL;
 }
 
 int main() {
     pthread_t t1, t2;
 
-    char* name1 = "Thread-1";
-    char* name2 = "Thread-2";
-    int delay1 = 5;
-    int delay2 = 1;
+    pthread_mutex_t lock;
+    pthread_mutex_init(&lock, NULL);
 
-    // pack arguments for each thread
-    void* args1[] = {name1, &delay1};
-    void* args2[] = {name2, &delay2};
-
-    pthread_create(&t1, NULL, task, args1);
-    pthread_create(&t2, NULL, task, args2);
+    pthread_create(&t1, NULL, increment, &lock);
+    pthread_create(&t2, NULL, increment, &lock);
 
     pthread_join(t1, NULL);
     pthread_join(t2, NULL);
+    pthread_mutex_destroy(&lock);
 
-    printf("Both threads are done\n");
+    printf("Final counter = %d\n", shared.counter);
 
     return 0;
 }

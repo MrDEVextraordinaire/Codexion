@@ -1,36 +1,42 @@
 #include "./includes/codexion.h"
 #include <unistd.h>
 
-long ms_timer()
+void *atomic_print(void *arg)
 {
-    struct timeval startime;
-    long startime_in_ms;
+    t_coder *coder = (t_coder *)arg;
+    pthread_mutex_t *print_lock;
 
-    gettimeofday(&startime, NULL);
-    startime_in_ms = startime.tv_sec * 1000 + startime.tv_usec / 1000;
-    return (startime_in_ms);
+    usleep(coder->id * 1000);
+    print_lock = &coder->data->print_lock;
+    pthread_mutex_lock(print_lock);
+    printf("\ncoder N%d " ,coder->id);
+    printf("printing at %lldms\n", (current_time() - coder->data->start_time));
+
+    pthread_mutex_unlock(print_lock);
+    return NULL;
 }
 
 int main(int argc, char **argv)
 {
+    int N = 8;
+    t_coder coders[N];
+    pthread_t threads[N];
     t_data data;
+
+    data.start_time = current_time();
+    pthread_mutex_init(&data.print_lock, NULL);
+
+    for(int i = 0 ; i<N ; i++)
+    {
+        coders[i].id = i;
+        coders[i].data = &data;
+        pthread_create(&threads[i], NULL, atomic_print, &coders[i]);
+    }
+
+    for(int i = 0 ; i<N; i++)
+        pthread_join(threads[i], NULL);
 
     if (!parsed_validated(argc, argv))
         return(1);
-    data.start_time = ms_timer();
-
-
-    printf("\nargc: %d\n",argc-1);
-    printf("sucess\n");
-
-    printf("data.start_time: %lli\n", data.start_time );
     return (0);
 }
-
-
-
-
-
-
-
-// gettimeofday, usleep, write, malloc, free, printf, fprintf, strcmp, strlen, atoi, memset

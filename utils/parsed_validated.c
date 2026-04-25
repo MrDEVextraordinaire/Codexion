@@ -35,7 +35,7 @@ static int all_ints(char **argv)
     int i = 1;
     int j = 0;
 
-    while (argv[i] && i < 8)
+    while (i < 8 && argv[i])
     {
         j = 0;
         while(argv[i][j])

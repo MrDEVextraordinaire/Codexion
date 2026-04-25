@@ -58,3 +58,4 @@ typedef struct s_data{
 
 int is_digit(char c);
 int parsed_validated(int argc, char **argv);
+long long current_time();
