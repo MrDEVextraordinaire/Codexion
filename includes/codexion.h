@@ -29,7 +29,7 @@ typedef struct s_coder{
 }   t_coder;
 
 typedef struct s_dongle{
-    pthread_mutex_t mutex;
+    pthread_mutex_t dongle_lock;
     long long last_released;
     t_waiter        *heap;
     int             heap_size;
