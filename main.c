@@ -1,16 +1,14 @@
 #include "./includes/codexion.h"
 #include <unistd.h>
 
-
-counter++;
-
 void *atomic_print(void *arg)
 {
     t_coder *coder = (t_coder *)arg;
-    // pthread_mutex_t *print_lock;
+    pthread_mutex_t *print_lock;
 
     // usleep(coder->id * 1000);
-    // print_lock = &coder->data->print_lock;
+
+    print_lock = &coder->data->print_lock;
     pthread_mutex_lock(print_lock);
     printf("\ncoder N%d " ,coder->id);
     printf("printing at %lldms\n", (current_time() - coder->data->start_time));
@@ -19,30 +17,14 @@ void *atomic_print(void *arg)
     printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
     printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
     printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
-    printf("printing at %lldms\n", (current_time() - coder->data->start_time));    printf("\ncoder N%d " ,coder->id);
     printf("printing at %lldms\n", (current_time() - coder->data->start_time));
-    printf("1-eat");
+    printf("\n1-eat");
     printf("2-sleep");
     printf("3-pray");
+    
 
-    pthread_mutex_unlock(print_lock);
+
+    // pthread_mutex_unlock(print_lock);
     return NULL;
 }
 

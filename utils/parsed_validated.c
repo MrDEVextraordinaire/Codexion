@@ -3,10 +3,10 @@
 static int validate_refactor_time(char *argv)
 {
     if (atoi(argv) < 1)
-    {
-        fprintf(stderr, "[Error] time to refactor has to be more than 0\n");
-        return (0);
-    }
+{
+		fprintf(stderr, "[Error] time to refactor has to be more than 0\n");
+		return (0);
+}
     return (1);
 }
 
@@ -80,3 +80,4 @@ int parsed_validated(int argc, char **argv)
         return (0);
     return (1);
 }
+
