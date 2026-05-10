@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/09 18:55:58 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/10 01:38:40 by itemlali         ###   ########.fr       */
+/*   Created: 2025/11/10 00:55:08 by itemlali          #+#    #+#             */
+/*   Updated: 2026/05/10 00:59:31 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/codexion.h"
+#include <stddef.h>
 
-int	ft_isdigit(char c)
+size_t	ft_strlen(const char *s)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	return (0);
-}
+	size_t	i;
 
-long long	current_time(void)
-{
-	struct timeval	startime;
-	long			startime_in_ms;
-
-	gettimeofday(&startime, NULL);
-	startime_in_ms = startime.tv_sec * 1000 + startime.tv_usec / 1000;
-	return (startime_in_ms);
+	if (!s)
+		return (0);
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }

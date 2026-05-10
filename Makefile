@@ -4,8 +4,11 @@ NAME = codexion
 
 SRCS = main.c\
 	utils/utils.c\
-	utils/parsed_validated.c
-	
+	utils/parsed_validated.c\
+	utils/valid_number.c\
+	utils/atoull.c\
+	utils/ft_strlen.c
+
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
@@ -15,9 +18,6 @@ $(NAME): $(OBJS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
-
-run: codexion
-	./codexion
 
 clean:
 	rm -rf $(OBJS)
@@ -30,4 +30,4 @@ re: fclean all
 rec: fclean all
 	make clean
 
-.PHONY: all, clean, fclean, re
+.PHONY: all clean fclean re

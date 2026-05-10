@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   atoull.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/09 18:55:58 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/10 01:38:40 by itemlali         ###   ########.fr       */
+/*   Created: 2026/05/10 00:06:42 by itemlali          #+#    #+#             */
+/*   Updated: 2026/05/10 02:07:31 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/codexion.h"
 
-int	ft_isdigit(char c)
+unsigned long long	ft_atoull(const char *nptr)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	return (0);
-}
+	int					i;
+	unsigned long long	result;
 
-long long	current_time(void)
-{
-	struct timeval	startime;
-	long			startime_in_ms;
-
-	gettimeofday(&startime, NULL);
-	startime_in_ms = startime.tv_sec * 1000 + startime.tv_usec / 1000;
-	return (startime_in_ms);
+	result = 0;
+	i = 0;
+	while (nptr[i])
+	{
+		result = result * 10 + (nptr[i] - '0');
+		i++;
+	}
+	return (result);
 }

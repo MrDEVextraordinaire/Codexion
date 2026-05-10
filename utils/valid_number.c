@@ -1,30 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   valid_number.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/09 18:55:58 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/10 01:38:40 by itemlali         ###   ########.fr       */
+/*   Created: 2026/05/09 23:47:51 by itemlali          #+#    #+#             */
+/*   Updated: 2026/05/10 01:57:38 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/codexion.h"
 
-int	ft_isdigit(char c)
+int	overflows_int(char *str)
 {
-	if (c >= 48 && c <= 57)
+	unsigned long long	ullong_arg;
+
+	ullong_arg = 0;
+	if (ft_strlen(str) > 10)
+		return (1);
+	ullong_arg = ft_atoull(str);
+	if (ullong_arg > INT_MAX)
 		return (1);
 	return (0);
 }
 
-long long	current_time(void)
+int	overflows_long_long(char *str)
 {
-	struct timeval	startime;
-	long			startime_in_ms;
+	unsigned long long	ullong_arg;
 
-	gettimeofday(&startime, NULL);
-	startime_in_ms = startime.tv_sec * 1000 + startime.tv_usec / 1000;
-	return (startime_in_ms);
+	ullong_arg = 0;
+	if (ft_strlen(str) > 19)
+		return (1);
+	ullong_arg = ft_atoull(str);
+	if (ullong_arg > LLONG_MAX)
+		return (1);
+	return (0);
 }
+
