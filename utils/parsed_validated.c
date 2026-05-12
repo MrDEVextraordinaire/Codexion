@@ -14,12 +14,12 @@
 
 static int	validate_refactor_time(char *argv)
 {
-	if (atoi(argv) < 1)
+	if (ft_atoull(argv) < 1)
 	{
 		fprintf(stderr, "[Error] time to refactor has to be more than 0\n");
-		return (0);
+		return (FALSE);
 	}
-	return (1);
+	return (TRUE);
 }
 
 static int	validate_scheduler(char *argv)
@@ -35,9 +35,9 @@ static int	validate_scheduler(char *argv)
 	else
 	{
 		fprintf(stderr, "[Error] 8th arg has to be fifo or edf\n");
-		return (0);
+		return (FALSE);
 	}
-	return (1);
+	return (TRUE);
 }
 
 static int	all_ints(int argc, char **argv)
@@ -46,70 +46,67 @@ static int	all_ints(int argc, char **argv)
 	int	j;
 
 	i = 1;
-	while (i < (argc -1) && argv[i])
+	while (i < (argc - 1) && argv[i])
 	{
 		j = 0;
 		while (argv[i][j])
 		{
 			if (!ft_isdigit(argv[i][j]))
 			{
-				fprintf(stderr, "\n[Error] 7 args have to be integers\n");
-				return (0);
+				fprintf(stderr, "\n[Error] args must be positive integers\n");
+				return (FALSE);
 			}
 			j++;
 		}
 		i++;
 	}
-	return (1);
+	return (TRUE);
 }
 
-static	int	overflow(int argc, char **argv)
+static int	overflow(int argc, char **argv)
 {
-	int i;
+	int	i;
 
 	i = 1;
-	while (i < (argc -1) && argv[i])
+	while (i < (argc - 1))
 	{
 		if (i == 1 || i == 6)
 		{
 			if (overflows_int(argv[i]))
 			{
 				fprintf(stderr, "[Error] args 1 or 6 exceed INT_MAX\n");
-				return (1);
+				return (TRUE);
 			}
 		}
 		else if (overflows_long_long(argv[i]))
 		{
-			fprintf(stderr, "[Error] a time arg exceeds LONG_MAX\n");
-			return (1);
+			fprintf(stderr, "[Error] a time arg exceeds LLONG_MAX\n");
+			return (TRUE);
 		}
 		i++;
 	}
-	return (0);
+	return (FALSE);
 }
 
 int	parsed_validated(int argc, char **argv)
 {
-	if (argc != 9)
+	if (argc != EXPECTED_ARGS)
 	{
 		fprintf(stderr, "[Error] Please input 8 valid arguments\n");
-		return (0);
+		return (FALSE);
 	}
-
 	if (!all_ints(argc, argv))
-		return (0);
-
+		return (FALSE);
 	if (overflow(argc, argv))
-		return (0);
-	if (atoi(argv[1]) < 1)
+		return (FALSE);
+	if (atoi(argv[NUMBER_OF_CODERS_ARG]) < 1)
 	{
 		fprintf(stderr, "\n[Error] you must have at least one coder\n");
-		return (0);
+		return (FALSE);
 	}
-
 	if (!validate_refactor_time(argv[5]))
-		return (0);
+		return (FALSE);
 	if (!validate_scheduler(argv[8]))
-		return (0);
-	return (1);
+		return (FALSE);
+	return (TRUE);
 }

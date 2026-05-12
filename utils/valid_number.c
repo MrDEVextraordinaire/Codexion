@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 23:47:51 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/10 01:57:38 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/11 01:31:02 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,12 @@ int	overflows_int(char *str)
 
 	ullong_arg = 0;
 	if (ft_strlen(str) > 10)
-		return (1);
+		return (TRUE);
 	ullong_arg = ft_atoull(str);
+	printf(" \n\nint %llu\n\n", ullong_arg);
 	if (ullong_arg > INT_MAX)
-		return (1);
-	return (0);
+		return (TRUE);
+	return (FALSE);
 }
 
 int	overflows_long_long(char *str)
@@ -31,10 +32,10 @@ int	overflows_long_long(char *str)
 
 	ullong_arg = 0;
 	if (ft_strlen(str) > 19)
-		return (1);
+		return (TRUE);
 	ullong_arg = ft_atoull(str);
+	printf("\n\n LLONG %llu\n\n", ullong_arg);
 	if (ullong_arg > LLONG_MAX)
-		return (1);
-	return (0);
+		return (TRUE);
+	return (FALSE);
 }
-

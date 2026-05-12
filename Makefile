@@ -7,7 +7,8 @@ SRCS = main.c\
 	utils/parsed_validated.c\
 	utils/valid_number.c\
 	utils/atoull.c\
-	utils/ft_strlen.c
+	utils/ft_strlen.c\
+	utils/initializer.c
 
 OBJS = $(SRCS:.c=.o)
 

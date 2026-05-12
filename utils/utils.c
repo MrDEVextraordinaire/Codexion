@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:55:58 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/10 01:38:40 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/11 01:30:38 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 int	ft_isdigit(char c)
 {
 	if (c >= 48 && c <= 57)
-		return (1);
-	return (0);
+		return (TRUE);
+	return (FALSE);
 }
 
 long long	current_time(void)
