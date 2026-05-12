@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:14 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/12 03:03:36 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/12 06:53:44 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 #define TIME_TO_COMPILE_ARG			3
 #define TIME_TO_DEBUG_ARG			4
 #define TIME_TO_REFACTOR_ARG		5
-#define N_COMPILES_ARG				6
+#define N_REQUIRED_COMPILES_ARG		6
 #define DONGLE_COOLDOWN_ARG			7
 #define SCHEDULER_ARG				8
 #define EXPECTED_ARGS				9
@@ -96,3 +96,4 @@ long long				ft_atoll(const char *nptr);
 int						overflows_long_long(char *str);
 int						overflows_int(char *str);
 t_data					*initializer(char **argv);
+void					free_all(t_data *data);

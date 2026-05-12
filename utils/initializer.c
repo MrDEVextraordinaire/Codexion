@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 00:47:15 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/12 03:27:28 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/12 06:57:42 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static void	*init_coders(t_data *data)
 
 	data->coders = malloc(sizeof(t_coder) * data->config.number_of_coders);
 	if (!data->coders)
-		return (NULL);
+		free_all(data);
 	i = 0;
 	while (i < data->config.number_of_coders)
 	{
@@ -28,11 +28,20 @@ static void	*init_coders(t_data *data)
 		data->coders[i].left_dongle = &(data->dongles[i]);
 		data->coders[i].right_dongle = &(
 				data->dongles[(i + 1) % data->config.number_of_coders]);
-		data->coders[i].data = &data;
+		data->coders[i].data = data;
 		i++;
 	}
-
 	return (data);
+}
+
+void	min_heap_fail_partial_free(t_data *data, int i)
+{
+	while (--i >= 0)
+	{
+		free(data->dongles[i].min_heap);
+		pthread_mutex_destroy(&(data->dongles[i].dongle_lock));
+	}
+	free(data->dongles);
 }
 
 static void	*init_dongles(t_data *data)
@@ -45,11 +54,16 @@ static void	*init_dongles(t_data *data)
 	i = 0;
 	while (i < data->config.number_of_coders)
 	{
-		pthread_mutex_init(&(data->dongles[i].dongle_lock), NULL);
 		data->dongles[i].last_released = 0;
 		data->dongles[i].in_use = FALSE;
 		data->dongles[i].min_heap = malloc(
 				sizeof(t_coder_queue) * data->config.number_of_coders);
+		if (!data->dongles[i].min_heap)
+		{
+			min_heap_fail_partial_free(data, i);
+			return (NULL);
+		}
+		pthread_mutex_init(&(data->dongles[i].dongle_lock), NULL);
 		data->dongles[i].heap_size = 0;
 		i++;
 	}
@@ -63,7 +77,8 @@ static void	config_initializer(char **argv, t_data *data)
 	data->config.time_to_compile = ft_atoll(argv[TIME_TO_COMPILE_ARG]);
 	data->config.time_to_debug = ft_atoll(argv[TIME_TO_DEBUG_ARG]);
 	data->config.time_to_refactor = ft_atoll(argv[TIME_TO_REFACTOR_ARG]);
-	data->config.number_of_compiles_required = ft_atoll(argv[N_COMPILES_ARG]);
+	data->config.number_of_compiles_required = ft_atoll(
+			argv[N_REQUIRED_COMPILES_ARG]);
 	data->config.dongle_cooldown = ft_atoll(argv[DONGLE_COOLDOWN_ARG]);
 	data->config.scheduler = argv[SCHEDULER_ARG];
 }
@@ -77,8 +92,12 @@ t_data	*initializer(char **argv)
 		return (NULL);
 	config_initializer(argv, data);
 	if (!init_dongles(data))
+	{
+		free(data);
 		return (NULL);
+	}
 	if (!init_coders(data))
 		return (NULL);
 	return (data);
 }
+

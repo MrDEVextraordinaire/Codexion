@@ -8,7 +8,8 @@ SRCS = main.c\
 	utils/valid_number.c\
 	utils/atoull.c\
 	utils/ft_strlen.c\
-	utils/initializer.c
+	utils/initializer.c\
+	utils/free_all.c
 
 OBJS = $(SRCS:.c=.o)
 
