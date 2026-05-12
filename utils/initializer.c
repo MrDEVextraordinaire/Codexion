@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 00:47:15 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/12 06:57:42 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/12 07:04:11 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@ static void	*init_coders(t_data *data)
 
 	data->coders = malloc(sizeof(t_coder) * data->config.number_of_coders);
 	if (!data->coders)
+	{
 		free_all(data);
+		return (NULL);
+	}
 	i = 0;
 	while (i < data->config.number_of_coders)
 	{
