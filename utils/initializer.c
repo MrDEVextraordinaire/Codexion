@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 00:47:15 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/12 07:04:11 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/13 04:45:54 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,13 @@ static void	*init_coders(t_data *data)
 	return (data);
 }
 
-void	min_heap_fail_partial_free(t_data *data, int i)
+static void	min_heap_fail_partial_free(t_data *data, int i)
 {
 	while (--i >= 0)
 	{
 		free(data->dongles[i].min_heap);
 		pthread_mutex_destroy(&(data->dongles[i].dongle_lock));
+		pthread_cond_destroy(&data->dongles[i].cond);
 	}
 	free(data->dongles);
 }
@@ -68,6 +69,7 @@ static void	*init_dongles(t_data *data)
 		}
 		pthread_mutex_init(&(data->dongles[i].dongle_lock), NULL);
 		data->dongles[i].heap_size = 0;
+		pthread_cond_init(&data->dongles[i].cond, NULL);
 		i++;
 	}
 	return (data);
@@ -93,6 +95,8 @@ t_data	*initializer(char **argv)
 	data = malloc(sizeof(t_data));
 	if (!data)
 		return (NULL);
+	printf("\ndata inside %p\n", data);
+
 	config_initializer(argv, data);
 	if (!init_dongles(data))
 	{

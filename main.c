@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:28 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/12 07:10:39 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/13 04:23:14 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int	main(int argc, char **argv)
 {
 	t_data	*data;
 
+	printf("\ndata before: %p\n", data);
 	if (!parsed_validated(argc, argv))
 		return (1);
 	data = initializer(argv);
@@ -39,7 +40,11 @@ int	main(int argc, char **argv)
 		fprintf(stderr, "[Error] Initializer / Allocator error\n");
 		return (2);
 	}
-	printf("\ninit works: %d\n", data->config.number_of_coders);
+	printf("\ndata after: %p\n", data);
+
+	printf("\ninit works: %p\n", (data->config.number_of_coders));
+	// char	name[100];
+	// scanf("%s please input: ", name);
 	free_all(data);
 	return (0);
 }
