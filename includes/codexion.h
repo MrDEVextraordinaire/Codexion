@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:14 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/13 04:42:33 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/14 03:03:45 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,21 +31,24 @@
 #define TRUE						1
 #define FALSE						0
 
-
 typedef struct s_dongle			t_dongle;
 typedef struct s_data			t_data;
 typedef struct s_coder_queue	t_coder_queue;
-typedef struct s_config
+typedef struct s_config			t_config;
+typedef struct s_coder			t_coder;
+
+typedef struct s_data
 {
-	int					number_of_coders;
-	long long			time_to_burnout;
-	long long			time_to_compile;
-	long long			time_to_debug;
-	long long			time_to_refactor;
-	int					number_of_compiles_required;
-	long long			dongle_cooldown;
-	char				*scheduler;
-}						t_config;
+	t_config			*config;
+	t_coder				*coders;
+	t_dongle			*dongles;
+	pthread_mutex_t		print_lock;
+	pthread_mutex_t		death_lock;
+	pthread_t			*threads;
+	pthread_t			monitor;
+	long long			start_time;
+	int					simulation_over;
+}						t_data;
 
 typedef struct s_coder
 {
@@ -54,14 +57,14 @@ typedef struct s_coder
 	int					compile_count;
 	t_dongle			*left_dongle;
 	t_dongle			*right_dongle;
-
 	t_data				*data;
 }						t_coder;
+
 
 typedef struct s_dongle
 {
 	pthread_mutex_t		dongle_lock;
-	pthread_cond_t		*cond;
+	pthread_cond_t		cond;
 	long long			last_released;
 	int					in_use;
 	t_coder_queue		*min_heap;
@@ -75,18 +78,17 @@ typedef struct s_coder_queue
 	long long			request_time;
 }						t_coder_queue;
 
-typedef struct s_data
+typedef struct s_config
 {
-	t_config			config;
-	t_coder				*coders;
-	t_dongle			*dongles;
-	pthread_mutex_t		print_lock;
-	pthread_mutex_t		death_lock;
-	pthread_t			*threads;
-	pthread_t			monitor;
-	long long			start_time;
-	int					simulation_over;
-}						t_data;
+	int					number_of_coders;
+	long long			time_to_burnout;
+	long long			time_to_compile;
+	long long			time_to_debug;
+	long long			time_to_refactor;
+	int					number_of_compiles_required;
+	long long			dongle_cooldown;
+	char				*scheduler;
+}						t_config;
 
 int						ft_isdigit(char c);
 int						parsed_validated(int argc, char **argv);
@@ -98,3 +100,4 @@ int						overflows_long_long(char *str);
 int						overflows_int(char *str);
 t_data					*initializer(char **argv);
 void					free_all(t_data *data);
+void					the_creator(t_data *data);

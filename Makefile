@@ -1,5 +1,7 @@
 CC = cc
 # CFLAGS = -Wall -Wextra -Werror -pthread -g
+CFLAGS = -pthread -g
+
 NAME = codexion
 
 SRCS = main.c\
@@ -9,7 +11,9 @@ SRCS = main.c\
 	utils/atoull.c\
 	utils/ft_strlen.c\
 	utils/initializer.c\
-	utils/free_all.c
+	utils/free_all.c\
+	utils/the_creator.c
+
 
 OBJS = $(SRCS:.c=.o)
 
