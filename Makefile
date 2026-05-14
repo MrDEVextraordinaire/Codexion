@@ -11,7 +11,7 @@ SRCS = main.c\
 	utils/atoull.c\
 	utils/ft_strlen.c\
 	utils/initializer.c\
-	utils/free_all.c\
+	utils/cleanup.c\
 	utils/the_creator.c
 
 

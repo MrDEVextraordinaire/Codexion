@@ -6,26 +6,15 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 00:47:15 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/14 03:42:18 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/14 04:52:21 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/codexion.h"
 
-static void	clean_dongle_struct(t_data *data, int i)
-{
-	while (--i >= 0)
-	{
-		free(data->dongles[i].min_heap);
-		pthread_mutex_destroy(&(data->dongles[i].dongle_lock));
-		pthread_cond_destroy(&data->dongles[i].cond);
-	}
-	free(data->dongles);
-	free(data->config);
-	free(data);
-}
 
-static void	*init_coders(t_data *data)
+
+static t_data	*init_coders(t_data *data)
 {
 	int	i;
 
@@ -50,13 +39,10 @@ static void	*init_coders(t_data *data)
 	return (data);
 }
 
-static void	*init_dongles(t_data *data)
+static t_data	*dongle_init_loop(t_data *data)
 {
 	int	i;
 
-	data->dongles = malloc(sizeof(t_dongle) * data->config->number_of_coders);
-	if (!data->dongles)
-		return (NULL);
 	i = 0;
 	while (i < data->config->number_of_coders)
 	{
@@ -77,13 +63,29 @@ static void	*init_dongles(t_data *data)
 	return (data);
 }
 
-static int	config_initializer(char **argv, t_data *data)
+static t_data	*init_dongles(t_data *data)
+{
+	int	i;
+
+	data->dongles = malloc(sizeof(t_dongle) * data->config->number_of_coders);
+	if (!data->dongles)
+	{
+		free(data->config);
+		free(data);
+		return (NULL);
+	}
+	if (!dongle_init_loop(data))
+		return (NULL);
+	return (data);
+}
+
+static t_data	*config_initializer(char **argv, t_data *data)
 {
 	data->config = malloc(sizeof(t_config));
 	if (!data->config)
 	{
 		free(data);
-		return (0);
+		return (NULL);
 	}
 	data->config->number_of_coders = atoi(argv[NUMBER_OF_CODERS_ARG]);
 	data->config->time_to_burnout = ft_atoll(argv[TIME_TO_BURNOUT_ARG]);
@@ -94,7 +96,7 @@ static int	config_initializer(char **argv, t_data *data)
 			argv[N_REQUIRED_COMPILES_ARG]);
 	data->config->dongle_cooldown = ft_atoll(argv[DONGLE_COOLDOWN_ARG]);
 	data->config->scheduler = argv[SCHEDULER_ARG];
-	return (1);
+	return (data);
 }
 
 t_data	*initializer(char **argv)
