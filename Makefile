@@ -5,7 +5,7 @@ CFLAGS = -pthread -g
 NAME = codexion
 
 SRCS = main.c\
-	utils/utils.c\
+	utils/current_time.c\
 	utils/parsed_validated.c\
 	utils/valid_number.c\
 	utils/atoull.c\

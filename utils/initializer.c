@@ -6,13 +6,11 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 00:47:15 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/14 04:52:21 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/17 18:31:49 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/codexion.h"
-
-
 
 static t_data	*init_coders(t_data *data)
 {
@@ -48,16 +46,22 @@ static t_data	*dongle_init_loop(t_data *data)
 	{
 		data->dongles[i].last_released = 0;
 		data->dongles[i].in_use = FALSE;
+		data->dongles[i].heap_size = 0;
 		data->dongles[i].min_heap = malloc(
 				sizeof(t_coder_queue) * data->config->number_of_coders);
+		printf("\ncreating dongle heap hip: %p\n", data->dongles[i].min_heap);
 		if (!data->dongles[i].min_heap)
-		{
-			clean_dongle_struct(data, i);
-			return (NULL);
+			return (destroy_partial_dongle(data, i, PHASE_NONE), NULL);
+		if (pthread_mutex_init(&(data->dongles[i].dongle_lock), NULL) != 0)
+			return (destroy_partial_dongle(data, i, PHASE_HEAP), NULL);
+		else
+			printf("\n creating locks %p: %d\n", (void *)&data->dongles[i].dongle_lock, i);
+		if (pthread_cond_init(&data->dongles[i].cond, NULL) != 0)
+			return (destroy_partial_dongle(data, i, PHASE_MUTEX), NULL);
+		else{
+			printf("\n creating cond %p\n", (void *)&data->dongles[i].cond);
+
 		}
-		pthread_mutex_init(&(data->dongles[i].dongle_lock), NULL);
-		data->dongles[i].heap_size = 0;
-		pthread_cond_init(&data->dongles[i].cond, NULL);
 		i++;
 	}
 	return (data);
@@ -71,6 +75,7 @@ static t_data	*init_dongles(t_data *data)
 	if (!data->dongles)
 	{
 		free(data->config);
+		free(data->threads);
 		free(data);
 		return (NULL);
 	}
@@ -108,6 +113,13 @@ t_data	*initializer(char **argv)
 		return (NULL);
 	if (!config_initializer(argv, data))
 		return (NULL);
+	data->threads = malloc(sizeof(pthread_t) * data->config->number_of_coders);
+	if (!data->threads)
+	{
+		free(data);
+		free(data->config);
+		return NULL;
+	}
 	if (!init_dongles(data))
 		return (NULL);
 	if (!init_coders(data))

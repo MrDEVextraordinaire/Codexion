@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:14 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/14 04:47:25 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/17 17:55:13 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,14 @@
 
 #define TRUE						1
 #define FALSE						0
+
+typedef enum e_init_phase
+{
+	PHASE_NONE,
+	PHASE_HEAP,
+	PHASE_MUTEX,
+	PHASE_FULL
+}	t_init_phase;
 
 typedef struct s_dongle			t_dongle;
 typedef struct s_data			t_data;
@@ -102,3 +110,5 @@ t_data					*initializer(char **argv);
 void					free_all(t_data *data);
 void					the_creator(t_data *data);
 void					clean_dongle_struct(t_data *data, int i);
+void					destroy_partial_dongle(
+							t_data *data, int i, t_init_phase phase);

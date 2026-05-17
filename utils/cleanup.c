@@ -1,17 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   free_all.c                                         :+:      :+:    :+:   */
+/*   cleanup.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/12 04:55:50 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/14 04:46:48 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/17 18:26:38 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/codexion.h"
 
+
+void	destroy_partial_dongle(t_data *data, int i, t_init_phase phase)
+{
+	if (phase >= PHASE_HEAP)
+		free(data->dongles[i].min_heap);
+	if (phase >= PHASE_MUTEX)
+		pthread_mutex_destroy(&(data->dongles[i].dongle_lock));
+	if (phase >= PHASE_FULL)
+		pthread_cond_destroy(&data->dongles[i].cond);
+	clean_dongle_struct(data, i);
+}
 
 void	clean_dongle_struct(t_data *data, int i)
 {
@@ -22,6 +33,7 @@ void	clean_dongle_struct(t_data *data, int i)
 		pthread_cond_destroy(&data->dongles[i].cond);
 	}
 	free(data->dongles);
+	free(data->threads);
 	free(data->config);
 	free(data);
 }
@@ -42,9 +54,7 @@ void	free_all(t_data *data)
 		i++;
 	}
 	free(data->dongles);
-	data->dongles = NULL;
+	free(data->threads);
 	free(data->config);
-	data->config = NULL;
 	free(data);
-	data = NULL;
 }

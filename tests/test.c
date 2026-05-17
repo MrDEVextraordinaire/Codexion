@@ -34,12 +34,12 @@ void	*increment(void *arg)
 		if (is_prime(i))
 		{
 			printf("Thread %lu reached: %u\n", (unsigned long)pthread_self(),
-				i);
+				shared.counter );
 			// usleep(10000);
 		}
 	}
 	pthread_mutex_unlock(lock);
-	// printf("Thread %lu finished\n", (unsigned long)pthread_self());
+	printf("Thread %lu finished\n", (unsigned long)pthread_self());
 	return (NULL);
 }
 
