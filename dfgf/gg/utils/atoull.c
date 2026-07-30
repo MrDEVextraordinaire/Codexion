@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/10 00:06:42 by itemlali          #+#    #+#             */
-/*   Updated: 2026/07/30 08:17:50 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/11 01:48:20 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,7 @@ unsigned long long	ft_atoull(const char *nptr)
 	unsigned long long	result;
 
 	result = 0;
-	if (nptr[0] == '+')
-		i = 1;
-	else
-		i = 0;
+	i = 0;
 	while (nptr[i])
 	{
 		result = result * 10 + (nptr[i] - '0');
@@ -36,10 +33,7 @@ long long	ft_atoll(const char *nptr)
 	long long	result;
 
 	result = 0;
-	if (nptr[0] == '+')
-		i = 1;
-	else
-		i = 0;
+	i = 0;
 	while (nptr[i])
 	{
 		result = result * 10 + (nptr[i] - '0');

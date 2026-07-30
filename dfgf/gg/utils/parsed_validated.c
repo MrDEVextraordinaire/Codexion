@@ -26,11 +26,11 @@ static int	validate_scheduler(char *argv)
 {
 	if ((strcmp(argv, "fifo") == 0))
 	{
-		printf("Scheduler: fifo\n");
+		printf("argv[8]: %s", argv);
 	}
 	else if (((strcmp(argv, "edf")) == 0))
 	{
-		printf("Scheduler: edf \n");
+		printf("\n8th argument  edf \n");
 	}
 	else
 	{
@@ -49,14 +49,11 @@ static int	all_ints(int argc, char **argv)
 	while (i < (argc - 1) && argv[i])
 	{
 		j = 0;
-		if (argv[i][0] == '+')
-			j++;
 		while (argv[i][j])
 		{
-			
 			if (!ft_isdigit(argv[i][j]))
 			{
-				fprintf(stderr, "[Error] args must be positive integers\n");
+				fprintf(stderr, "\n[Error] args must be positive integers\n");
 				return (FALSE);
 			}
 			j++;
@@ -104,7 +101,7 @@ int	parsed_validated(int argc, char **argv)
 		return (FALSE);
 	if (atoi(argv[NUMBER_OF_CODERS_ARG]) < 1)
 	{
-		fprintf(stderr, "[Error] you must have at least one coder\n");
+		fprintf(stderr, "\n[Error] you must have at least one coder\n");
 		return (FALSE);
 	}
 	if (!validate_refactor_time(argv[5]))

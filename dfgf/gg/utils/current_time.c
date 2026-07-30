@@ -1,39 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   valid_number.c                                     :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/09 23:47:51 by itemlali          #+#    #+#             */
-/*   Updated: 2026/07/29 11:54:53 by itemlali         ###   ########.fr       */
+/*   Created: 2026/05/09 18:55:58 by itemlali          #+#    #+#             */
+/*   Updated: 2026/05/11 01:30:38 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/codexion.h"
 
-int	overflows_int(char *str)
+int	ft_isdigit(char c)
 {
-	unsigned long long	ullong_arg;
-
-	ullong_arg = 0;
-	if (ft_strlen(str) > 10)
-		return (TRUE);
-	ullong_arg = ft_atoull(str);
-	if (ullong_arg > INT_MAX)
+	if (c >= 48 && c <= 57)
 		return (TRUE);
 	return (FALSE);
 }
 
-int	overflows_long_long(char *str)
+long long	current_time(void)
 {
-	unsigned long long	ullong_arg;
+	struct timeval	startime;
+	long			startime_in_ms;
 
-	ullong_arg = 0;
-	if (ft_strlen(str) > 19)
-		return (TRUE);
-	ullong_arg = ft_atoull(str);
-	if (ullong_arg > LLONG_MAX)
-		return (TRUE);
-	return (FALSE);
+	gettimeofday(&startime, NULL);
+	startime_in_ms = startime.tv_sec * 1000 + startime.tv_usec / 1000;
+	return (startime_in_ms);
 }

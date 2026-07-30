@@ -1,39 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   valid_number.c                                     :+:      :+:    :+:   */
+/*   the_creator.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/09 23:47:51 by itemlali          #+#    #+#             */
-/*   Updated: 2026/07/29 11:54:53 by itemlali         ###   ########.fr       */
+/*   Created: 2026/05/14 02:56:48 by itemlali          #+#    #+#             */
+/*   Updated: 2026/05/17 17:09:11 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/codexion.h"
 
-int	overflows_int(char *str)
+void	the_creator(t_data *data)
 {
-	unsigned long long	ullong_arg;
-
-	ullong_arg = 0;
-	if (ft_strlen(str) > 10)
-		return (TRUE);
-	ullong_arg = ft_atoull(str);
-	if (ullong_arg > INT_MAX)
-		return (TRUE);
-	return (FALSE);
+	printf("\nstarting creator: %lld\n\n", (data->config->time_to_compile));
+	return ;
 }
 
-int	overflows_long_long(char *str)
-{
-	unsigned long long	ullong_arg;
-
-	ullong_arg = 0;
-	if (ft_strlen(str) > 19)
-		return (TRUE);
-	ullong_arg = ft_atoull(str);
-	if (ullong_arg > LLONG_MAX)
-		return (TRUE);
-	return (FALSE);
-}

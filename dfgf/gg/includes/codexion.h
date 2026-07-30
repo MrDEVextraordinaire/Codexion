@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:14 by itemlali          #+#    #+#             */
-/*   Updated: 2026/07/30 13:23:37 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/05/17 17:55:13 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ typedef struct s_data
 	t_coder				*coders;
 	t_dongle			*dongles;
 	pthread_mutex_t		print_lock;
-	pthread_mutex_t		burnout_lock;
+	pthread_mutex_t		death_lock;
 	pthread_t			*threads;
 	pthread_t			monitor;
 	long long			start_time;
@@ -68,9 +68,9 @@ typedef struct s_coder
 	t_data				*data;
 }						t_coder;
 
+
 typedef struct s_dongle
 {
-	int					id;
 	pthread_mutex_t		dongle_lock;
 	pthread_cond_t		cond;
 	long long			last_released;
