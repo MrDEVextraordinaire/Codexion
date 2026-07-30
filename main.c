@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:28 by itemlali          #+#    #+#             */
-/*   Updated: 2026/07/30 15:35:07 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/07/30 16:01:53 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void take_dongles(t_coder *coder)
 			rls_time_1st = current_time() - first->last_released;
 			if (rls_time_1st < coder->data->config->dongle_cooldown)
 			{
-				printf("coder%d gets here and needs to sleep: %lld\n",coder->id, ((coder->data->config->dongle_cooldown - rls_time_1st) * 1000));
+				printf("coder%d gets here but dongle cooldown: %lld\n",coder->id, ((coder->data->config->dongle_cooldown - rls_time_1st) * 1000));
 				pthread_mutex_unlock(&first->dongle_lock);
 				usleep((coder->data->config->dongle_cooldown - rls_time_1st) * 1000);
 				continue;
@@ -100,8 +100,9 @@ void	*routine(void *arg)
 		take_dongles(coder);
 		safe_print(coder, "is compiling");
 		pthread_mutex_lock(&coder->data->burnout_lock);
+		coder->compile_count++;
+		printf("rt coder %d compiled %d times, he last compiled: %lld ago\n", coder->id,coder->compile_count, current_time() - coder->last_compiled);
 		coder->last_compiled = current_time();
-		printf("routine coder %d last compiled: %lld\n", coder->id, coder->last_compiled);
 		pthread_mutex_unlock(&coder->data->burnout_lock);
 		usleep(coder->data->config->time_to_compile * 1000);
 		release_dongles(coder);
