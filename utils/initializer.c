@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 00:47:15 by itemlali          #+#    #+#             */
-/*   Updated: 2026/07/30 14:29:57 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/07/30 15:33:53 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static t_data	*dongle_init_loop(t_data *data)
 	i = 0;
 	while (i < data->config->number_of_coders)
 	{
-		data->dongles->id = i + 1;
+		data->dongles[i].id = i + 1;
 		data->dongles[i].last_released = 0;
 		data->dongles[i].in_use = FALSE;
 		data->dongles[i].heap_size = 0;

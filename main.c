@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:28 by itemlali          #+#    #+#             */
-/*   Updated: 2026/07/30 15:09:17 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/07/30 15:35:07 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -134,7 +134,7 @@ void* monitor_routine(void *args)
 			i++;
 		}
 	}
-	
+	usleep(1000);
 	
 	return (NULL);
 }
