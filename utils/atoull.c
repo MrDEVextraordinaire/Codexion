@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/10 00:06:42 by itemlali          #+#    #+#             */
-/*   Updated: 2026/07/30 08:17:50 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/01 18:10:01 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ unsigned long long	ft_atoull(const char *nptr)
 	return (result);
 }
 
-long long	ft_atoll(const char *nptr)
+long	ft_atol(const char *nptr)
 {
 	int			i;
-	long long	result;
+	long	result;
 
 	result = 0;
 	if (nptr[0] == '+')

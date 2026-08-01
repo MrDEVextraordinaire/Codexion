@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:28 by itemlali          #+#    #+#             */
-/*   Updated: 2026/07/30 16:01:53 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/01 22:05:10 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void safe_print(t_coder *coder, char *action)
 {
 	pthread_mutex_lock(&coder->data->print_lock);
-	printf("%lld coder %d %s\n", (current_time() - coder->data->start_time), coder->id, action);
+	printf("%ld coder %d %s\n", (current_time() - coder->data->start_time), coder->id, action);
 	pthread_mutex_unlock(&coder->data->print_lock);
 }
 
@@ -33,6 +33,10 @@ void release_dongles(t_coder *coder)
 {
 	coder->left_dongle->last_released = current_time();
 	coder->right_dongle->last_released = current_time();
+	safe_print(coder, "\n");
+	printf("coder %d released left dongle %d right dongle %d\n", coder->id, coder->left_dongle->id, coder->right_dongle->id);
+	coder->left_dongle->in_use = FALSE;
+	coder->right_dongle->in_use = FALSE;
 	pthread_mutex_unlock(&coder->left_dongle->dongle_lock);
 	pthread_mutex_unlock(&coder->right_dongle->dongle_lock);
 }
@@ -41,8 +45,8 @@ void take_dongles(t_coder *coder)
 {
 	t_dongle *first;
 	t_dongle *second;
-	long long rls_time_1st;
-	long long rls_time_2nd;
+	long rls_time_1st;
+	long rls_time_2nd;
 	
 	if (coder->left_dongle->id < coder->right_dongle->id)
 	{
@@ -57,32 +61,49 @@ void take_dongles(t_coder *coder)
 	while(1)
 	{
 		pthread_mutex_lock(&first->dongle_lock);
+		safe_print(coder, "\n");
+		printf("coder %d took rd%d checking for cd\n",coder->id, first->id);
 		if (first->last_released != 0)
 		{
 			rls_time_1st = current_time() - first->last_released;
 			if (rls_time_1st < coder->data->config->dongle_cooldown)
 			{
-				printf("coder%d gets here but dongle cooldown: %lld\n",coder->id, ((coder->data->config->dongle_cooldown - rls_time_1st) * 1000));
+				safe_print(coder, "\n");
+				printf("coder %d faced rd%d cd: %ld\n",coder->id, first->id , ((coder->data->config->dongle_cooldown - rls_time_1st) * 1000));
 				pthread_mutex_unlock(&first->dongle_lock);
 				usleep((coder->data->config->dongle_cooldown - rls_time_1st) * 1000);
 				continue;
 			}
+			if (second->in_use == TRUE)
+			{
+				safe_print(coder, "\n");
+				printf("]]coder %d found 2nd ld%d in use releasing rd%d\n",coder->id, second->id, first->id);
+				pthread_mutex_unlock(&first->dongle_lock);
+				usleep((coder->data->config->dongle_cooldown + coder->data->config->time_to_debug + coder->data->config->time_to_refactor) * 1000);
+				continue;
+			}
+			first->in_use = TRUE;
 		}
 		break;
 	}
 	while(1)
 	{
 		pthread_mutex_lock(&second->dongle_lock);
+		safe_print(coder, "\n");		
+		printf("coder %d took ld%d checking for cd\n",coder->id,second->id);
 		if (second->last_released != 0)
 		{
 			rls_time_2nd = current_time() - second->last_released;
 			if (rls_time_2nd < coder->data->config->dongle_cooldown)
 			{
+				pthread_mutex_unlock(&first->dongle_lock);
 				pthread_mutex_unlock(&second->dongle_lock);
+				safe_print(coder, "\n");
+				printf("###########coder %d faced ld%d releasing rd%d ld%d > sleep for: %ld\n",coder->id, second->id ,first->id, second->id, ((coder->data->config->dongle_cooldown - rls_time_2nd) * 1000));
 				usleep((coder->data->config->dongle_cooldown - rls_time_2nd) * 1000);
 				continue;
 			}
-			
+			second->in_use = TRUE;
 		}
 		break;
 	}
@@ -101,14 +122,15 @@ void	*routine(void *arg)
 		safe_print(coder, "is compiling");
 		pthread_mutex_lock(&coder->data->burnout_lock);
 		coder->compile_count++;
-		printf("rt coder %d compiled %d times, he last compiled: %lld ago\n", coder->id,coder->compile_count, current_time() - coder->last_compiled);
+		safe_print(coder, "\n");
+		printf("coder %d will ld%d rd%d %dth time for %ld, he last compiled: %ld ago\n", coder->id,coder->left_dongle->id, coder->right_dongle->id ,coder->compile_count,coder->data->config->time_to_compile , current_time() - coder->last_compiled);
 		coder->last_compiled = current_time();
 		pthread_mutex_unlock(&coder->data->burnout_lock);
 		usleep(coder->data->config->time_to_compile * 1000);
 		release_dongles(coder);
 		safe_print(coder, "is debugging");
 		usleep(coder->data->config->time_to_debug * 1000);
-		safe_print(coder, "is refactorin");
+		safe_print(coder, "is refactorin\n\n");
 		usleep(coder->data->config->time_to_refactor * 1000);
 	}
 	return (NULL);
@@ -117,26 +139,39 @@ void	*routine(void *arg)
 void* monitor_routine(void *args)
 {
 	t_data *data = (t_data *)args;
-	int i = 0;
+	int i;
+	int all_compiled;
 
-	while(data->simulation_over != 1)
+	while(!check_sim_over(data))
 	{
 		i = 0;
+		all_compiled = TRUE;
 		while (i < data->config->number_of_coders)
 		{
 			pthread_mutex_lock(&data->burnout_lock);
 			if ((current_time() - data->coders[i].last_compiled) > data->config->time_to_burnout)
 				{
-					printf("BURNOUT !!!!!!!!!! monitor coder %d last compiled: %lld current time: %lld burnout: %lld diff: %lld\n",data->coders[i].id, data->coders[i].last_compiled , current_time(), data->config->time_to_burnout, (current_time() - data->coders[i].last_compiled));
-					data->simulation_over = 1;
-					exit(1);
+					// safe_print(data->coders[0], "\n");
+					printf("BURNOUT !!!!!!!!!! monitor coder %d last compiled: %ld current time: %ld burnout: %ld diff: %ld\n",data->coders[i].id, data->coders[i].last_compiled , current_time(), data->config->time_to_burnout, (current_time() - data->coders[i].last_compiled));
+					data->simulation_over = TRUE;
+					pthread_mutex_unlock(&data->burnout_lock);
+					return (NULL);
 				}
+			if (data->coders[i].compile_count < data->config->number_of_compiles_required)
+				all_compiled = FALSE;
 			pthread_mutex_unlock(&data->burnout_lock);
 			i++;
 		}
+		pthread_mutex_lock(&data->burnout_lock);
+		if (all_compiled == TRUE)
+		{
+			data->simulation_over = TRUE;
+			pthread_mutex_unlock(&data->burnout_lock);
+			return (NULL);
+		}
+		pthread_mutex_unlock(&data->burnout_lock);
+		usleep(1000);
 	}
-	usleep(1000);
-	
 	return (NULL);
 }
 
@@ -153,7 +188,6 @@ int	main(int argc, char **argv)
 		fprintf(stderr, "[Error] Initializer / Allocator error\n");
 		return (2);
 	}
-
 	pthread_mutex_init(&data->burnout_lock, NULL);
 	pthread_mutex_init(&data->print_lock, NULL);
 	data->simulation_over = 0;
@@ -171,9 +205,9 @@ int	main(int argc, char **argv)
 		pthread_join(data->threads[i], NULL);
 		i++;
 	}
+	pthread_join(data->monitor ,NULL);
 	pthread_mutex_destroy(&data->burnout_lock);
 	pthread_mutex_destroy(&data->print_lock);
-	the_creator(data);
 	free_all(data);
 	return (0);
 }

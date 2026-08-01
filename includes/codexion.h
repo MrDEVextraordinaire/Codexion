@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:14 by itemlali          #+#    #+#             */
-/*   Updated: 2026/07/30 13:23:37 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/01 18:09:34 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,14 +54,14 @@ typedef struct s_data
 	pthread_mutex_t		burnout_lock;
 	pthread_t			*threads;
 	pthread_t			monitor;
-	long long			start_time;
+	long			start_time;
 	int					simulation_over;
 }						t_data;
 
 typedef struct s_coder
 {
 	int					id;
-	long long			last_compiled;
+	long			last_compiled;
 	int					compile_count;
 	t_dongle			*left_dongle;
 	t_dongle			*right_dongle;
@@ -73,7 +73,7 @@ typedef struct s_dongle
 	int					id;
 	pthread_mutex_t		dongle_lock;
 	pthread_cond_t		cond;
-	long long			last_released;
+	long			last_released;
 	int					in_use;
 	t_coder_queue		*min_heap;
 	int					heap_size;
@@ -82,28 +82,28 @@ typedef struct s_dongle
 typedef struct s_coder_queue
 {
 	int					coder_id;
-	long long			deadline;
-	long long			request_time;
+	long			deadline;
+	long			request_time;
 }						t_coder_queue;
 
 typedef struct s_config
 {
 	int					number_of_coders;
-	long long			time_to_burnout;
-	long long			time_to_compile;
-	long long			time_to_debug;
-	long long			time_to_refactor;
+	long			time_to_burnout;
+	long 			time_to_compile;
+	long 			time_to_debug;
+	long 			time_to_refactor;
 	int					number_of_compiles_required;
-	long long			dongle_cooldown;
+	long 			dongle_cooldown;
 	char				*scheduler;
 }						t_config;
 
 int						ft_isdigit(char c);
 int						parsed_validated(int argc, char **argv);
-long long				current_time(void);
+long				current_time(void);
 size_t					ft_strlen(const char *s);
 unsigned long long		ft_atoull(const char *nptr);
-long long				ft_atoll(const char *nptr);
+long				ft_atol(const char *nptr);
 int						overflows_long_long(char *str);
 int						overflows_int(char *str);
 t_data					*initializer(char **argv);

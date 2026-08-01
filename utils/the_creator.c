@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/14 02:56:48 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/17 17:09:11 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/01 17:42:54 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	the_creator(t_data *data)
 {
-	printf("\nstarting creator: %lld\n\n", (data->config->time_to_compile));
+	printf("\nstarting creator: %ld\n\n", (data->config->time_to_compile));
 	return ;
 }
 

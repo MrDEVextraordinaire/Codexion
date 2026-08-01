@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   current_time.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:55:58 by itemlali          #+#    #+#             */
-/*   Updated: 2026/05/11 01:30:38 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/01 18:10:09 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_isdigit(char c)
 	return (FALSE);
 }
 
-long long	current_time(void)
+long	current_time(void)
 {
 	struct timeval	startime;
 	long			startime_in_ms;

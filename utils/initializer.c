@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 00:47:15 by itemlali          #+#    #+#             */
-/*   Updated: 2026/07/30 15:33:53 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/01 18:12:26 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static t_data	*init_coders(t_data *data)
 	{
 		data->coders[i].id = i + 1;
 		data->coders[i].last_compiled = data->start_time;
-		printf("init coder %d last compiled %lld start time: %lld\n", data->coders[i].id, data->coders[i].last_compiled, data->start_time);
+		printf("init coder %d last compiled %ld start time: %ld\n", data->coders[i].id, data->coders[i].last_compiled, data->start_time);
 		data->coders[i].compile_count = 0;
 		data->coders[i].left_dongle = &(data->dongles[i]);
 		data->coders[i].right_dongle = &(
@@ -92,13 +92,13 @@ static t_data	*config_initializer(char **argv, t_data *data)
 		return (NULL);
 	}
 	data->config->number_of_coders = atoi(argv[NUMBER_OF_CODERS_ARG]);
-	data->config->time_to_burnout = ft_atoll(argv[TIME_TO_BURNOUT_ARG]);
-	data->config->time_to_compile = ft_atoll(argv[TIME_TO_COMPILE_ARG]);
-	data->config->time_to_debug = ft_atoll(argv[TIME_TO_DEBUG_ARG]);
-	data->config->time_to_refactor = ft_atoll(argv[TIME_TO_REFACTOR_ARG]);
-	data->config->number_of_compiles_required = ft_atoll(
+	data->config->time_to_burnout = ft_atol(argv[TIME_TO_BURNOUT_ARG]);
+	data->config->time_to_compile = ft_atol(argv[TIME_TO_COMPILE_ARG]);
+	data->config->time_to_debug = ft_atol(argv[TIME_TO_DEBUG_ARG]);
+	data->config->time_to_refactor = ft_atol(argv[TIME_TO_REFACTOR_ARG]);
+	data->config->number_of_compiles_required = ft_atol(
 			argv[N_REQUIRED_COMPILES_ARG]);
-	data->config->dongle_cooldown = ft_atoll(argv[DONGLE_COOLDOWN_ARG]);
+	data->config->dongle_cooldown = ft_atol(argv[DONGLE_COOLDOWN_ARG]);
 	data->config->scheduler = argv[SCHEDULER_ARG];
 	return (data);
 }

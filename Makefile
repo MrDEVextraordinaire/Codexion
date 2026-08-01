@@ -1,7 +1,7 @@
 CC = cc
 # CFLAGS = -Wall -Wextra -Werror -pthread -g
 CFLAGS = -pthread -g
-
+HEADER = includes/codexion.h
 NAME = codexion
 
 SRCS = main.c\
@@ -14,12 +14,11 @@ SRCS = main.c\
 	utils/cleanup.c\
 	utils/the_creator.c
 
-
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): $(OBJS) $(HEADER)
 	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 
 %.o: %.c
