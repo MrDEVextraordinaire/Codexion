@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:28 by itemlali          #+#    #+#             */
-/*   Updated: 2026/08/03 19:49:02 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/03 20:01:51 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void take_dongles(t_coder *coder)
 			pthread_mutex_unlock(&first->dongle_lock);
 			usleep((coder->data->config->dongle_cooldown - rls_time_1st) * 1000);
 			continue;
-		}
+		} 
 		pthread_mutex_lock(&second->dongle_lock);
 		safe_print(coder, ">>");
 		printf("coder %d took 2nd ld%d checking for 2nd cd\n",coder->id,second->id);
