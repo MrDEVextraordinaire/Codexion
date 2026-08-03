@@ -1,0 +1,240 @@
+==43191== Helgrind, a thread error detector
+==43191== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==43191== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==43191== Command: ./codexion 5 400 100 100 100 5 0 fifo
+==43191== 
+==43191== ---Thread-Announcement------------------------------------------
+==43191== 
+==43191== Thread #4 was created
+==43191==    at 0x49A3B53: clone (clone.S:76)
+==43191==    by 0x49A3CD2: __clone_internal_fallback (clone-internal.c:64)
+==43191==    by 0x49A3CD2: __clone_internal (clone-internal.c:109)
+==43191==    by 0x491662F: create_thread (pthread_create.c:297)
+==43191==    by 0x4917284: pthread_create@@GLIBC_2.34 (pthread_create.c:836)
+==43191==    by 0x4854975: ??? (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==43191==    by 0x109D16: main (main.c:200)
+==43191== 
+==43191== ---Thread-Announcement------------------------------------------
+==43191== 
+==43191== Thread #3 was created
+==43191==    at 0x49A3B53: clone (clone.S:76)
+==43191==    by 0x49A3CD2: __clone_internal_fallback (clone-internal.c:64)
+==43191==    by 0x49A3CD2: __clone_internal (clone-internal.c:109)
+==43191==    by 0x491662F: create_thread (pthread_create.c:297)
+==43191==    by 0x4917284: pthread_create@@GLIBC_2.34 (pthread_create.c:836)
+==43191==    by 0x4854975: ??? (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==43191==    by 0x109D16: main (main.c:200)
+==43191== 
+==43191== ---Thread-Announcement------------------------------------------
+==43191== 
+==43191== Thread #1 is the program's root thread
+==43191== 
+==43191== ----------------------------------------------------------------
+==43191== 
+==43191==  Lock at 0x4A90348 was first observed
+==43191==    at 0x48562EB: pthread_mutex_init (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==43191==    by 0x10A790: dongle_init_loop (initializer.c:56)
+==43191==    by 0x10A895: init_dongles (initializer.c:81)
+==43191==    by 0x10AA9C: initializer (initializer.c:123)
+==43191==    by 0x109C45: main (main.c:187)
+==43191==  Address 0x4a90348 is 264 bytes inside a block of size 640 alloc'd
+==43191==    at 0x48488A8: malloc (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==43191==    by 0x10A83F: init_dongles (initializer.c:73)
+==43191==    by 0x10AA9C: initializer (initializer.c:123)
+==43191==    by 0x109C45: main (main.c:187)
+==43191==  Block was alloc'd by thread #1
+==43191== 
+==43191==  Lock at 0x4A903C8 was first observed
+==43191==    at 0x48562EB: pthread_mutex_init (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==43191==    by 0x10A790: dongle_init_loop (initializer.c:56)
+==43191==    by 0x10A895: init_dongles (initializer.c:81)
+==43191==    by 0x10AA9C: initializer (initializer.c:123)
+==43191==    by 0x109C45: main (main.c:187)
+==43191==  Address 0x4a903c8 is 392 bytes inside a block of size 640 alloc'd
+==43191==    at 0x48488A8: malloc (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==43191==    by 0x10A83F: init_dongles (initializer.c:73)
+==43191==    by 0x10AA9C: initializer (initializer.c:123)
+==43191==    by 0x109C45: main (main.c:187)
+==43191==  Block was alloc'd by thread #1
+==43191== 
+==43191==  Lock at 0x4A902C8 was first observed
+==43191==    at 0x48562EB: pthread_mutex_init (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==43191==    by 0x10A790: dongle_init_loop (initializer.c:56)
+==43191==    by 0x10A895: init_dongles (initializer.c:81)
+==43191==    by 0x10AA9C: initializer (initializer.c:123)
+==43191==    by 0x109C45: main (main.c:187)
+==43191==  Address 0x4a902c8 is 136 bytes inside a block of size 640 alloc'd
+==43191==    at 0x48488A8: malloc (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==43191==    by 0x10A83F: init_dongles (initializer.c:73)
+==43191==    by 0x10AA9C: initializer (initializer.c:123)
+==43191==    by 0x109C45: main (main.c:187)
+==43191==  Block was alloc'd by thread #1
+==43191== 
+==43191== Possible data race during write of size 4 at 0x4A903A8 by thread #4
+==43191== Locks held: 2, at addresses 0x4A90348 0x4A903C8
+==43191==    at 0x1094AD: release_dongles (main.c:38)
+==43191==    by 0x10999B: routine (main.c:132)
+==43191==    by 0x4854B7A: ??? (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==43191==    by 0x4916B83: start_thread (pthread_create.c:447)
+==43191==    by 0x49A3B63: clone (clone.S:100)
+==43191== 
+==43191== This conflicts with a previous read of size 4 by thread #3
+==43191== Locks held: 1, at address 0x4A902C8
+==43191==    at 0x109660: take_dongles (main.c:77)
+==43191==    by 0x109896: routine (main.c:123)
+==43191==    by 0x4854B7A: ??? (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==43191==    by 0x4916B83: start_thread (pthread_create.c:447)
+==43191==    by 0x49A3B63: clone (clone.S:100)
+==43191==  Address 0x4a903a8 is 360 bytes inside a block of size 640 alloc'd
+==43191==    at 0x48488A8: malloc (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==43191==    by 0x10A83F: init_dongles (initializer.c:73)
+==43191==    by 0x10AA9C: initializer (initializer.c:123)
+==43191==    by 0x109C45: main (main.c:187)
+==43191==  Block was alloc'd by thread #1
+==43191== 
+Scheduler: fifo
+init coder 1 last compiled 1785772480109 start time: 1785772480109
+init coder 2 last compiled 1785772480109 start time: 1785772480109
+init coder 3 last compiled 1785772480109 start time: 1785772480109
+init coder 4 last compiled 1785772480109 start time: 1785772480109
+init coder 5 last compiled 1785772480109 start time: 1785772480109
+22 coder 1 >>
+coder 1 took rd1 checking for cd
+25 coder 1 >>
+coder 1 took ld2 checking for cd
+26 coder 1 is compiling
+26 coder 1 >>
+coder 1 will compile ld1 rd2 1th time for 100, he last compiled: 39 ago
+36 coder 3 >>
+coder 3 took rd3 checking for cd
+36 coder 3 >>
+coder 3 took ld4 checking for cd
+36 coder 3 is compiling
+36 coder 3 >>
+coder 3 will compile ld3 rd4 1th time for 100, he last compiled: 47 ago
+133 coder 1 >>
+coder 1 released left dongle 1 right dongle 2
+134 coder 5 >>
+coder 5 took rd1 checking for cd
+134 coder 5 >>
+coder 5 took ld5 checking for cd
+134 coder 5 is compiling
+134 coder 5 >>
+coder 5 will compile ld5 rd1 1th time for 100, he last compiled: 146 ago
+136 coder 1 is debugging
+136 coder 2 >>
+coder 2 took rd2 checking for cd
+137 coder 3 >>
+coder 3 released left dongle 3 right dongle 4
+138 coder 3 is debugging
+139 coder 2 >>
+coder 2 took ld3 checking for cd
+139 coder 2 is compiling
+139 coder 2 >>
+coder 2 will compile ld2 rd3 1th time for 100, he last compiled: 150 ago
+140 coder 4 >>
+coder 4 took rd4 checking for cd
+235 coder 5 >>
+coder 5 released left dongle 5 right dongle 1
+235 coder 4 >>
+coder 4 took ld5 checking for cd
+236 coder 4 is compiling
+236 coder 4 >>
+coder 4 will compile ld4 rd5 1th time for 100, he last compiled: 247 ago
+237 coder 5 is debugging
+237 coder 1 is refactorin
+
+
+239 coder 3 is refactorin
+
+
+241 coder 2 >>
+coder 2 released left dongle 2 right dongle 3
+241 coder 2 is debugging
+336 coder 4 >>
+coder 4 released left dongle 4 right dongle 5
+336 coder 4 is debugging
+337 coder 5 is refactorin
+
+
+338 coder 1 >>
+coder 1 took rd1 checking for cd
+338 coder 1 >>
+coder 1 took ld2 checking for cd
+338 coder 1 is compiling
+338 coder 1 >>
+coder 1 will compile ld1 rd2 2th time for 100, he last compiled: 307 ago
+339 coder 3 >>
+coder 3 took rd3 checking for cd
+339 coder 3 >>
+coder 3 took ld4 checking for cd
+339 coder 3 is compiling
+340 coder 3 >>
+coder 3 will compile ld3 rd4 2th time for 100, he last compiled: 304 ago
+342 coder 2 is refactorin
+
+
+437 coder 4 is refactorin
+
+
+439 coder 1 >>
+coder 1 released left dongle 1 right dongle 2
+439 coder 5 >>
+coder 5 took rd1 checking for cd
+439 coder 5 >>
+coder 5 took ld5 checking for cd
+439 coder 5 is compiling
+440 coder 5 >>
+coder 5 will compile ld5 rd1 2th time for 100, he last compiled: 305 ago
+440 coder 1 is debugging
+440 coder 3 >>
+coder 3 released left dongle 3 right dongle 4
+441 coder 3 is debugging
+443 coder 2 >>
+coder 2 took rd2 checking for cd
+443 coder 2 >>
+coder 2 took ld3 checking for cd
+443 coder 2 is compiling
+443 coder 2 >>
+coder 2 will compile ld2 rd3 2th time for 100, he last compiled: 303 ago
+538 coder 4 >>
+coder 4 took rd4 checking for cd
+538 coder 4 >>
+]]coder 4 found 2nd ld5 in use releasing rd4
+541 coder 5 >>
+coder 5 released left dongle 5 right dongle 1
+541 coder 5 is debugging
+541 coder 1 is refactorin
+
+
+542 coder 3 is refactorin
+
+
+544 coder 2 >>
+coder 2 released left dongle 2 right dongle 3
+545 coder 2 is debugging
+BURNOUT !!!!!!!!!! monitor coder 4 burnout: 400 last compiled: 401
+646 coder 2 is refactorin
+
+
+647 coder 5 is refactorin
+
+
+742 coder 4 >>
+coder 4 took rd4 checking for cd
+743 coder 4 >>
+coder 4 took ld5 checking for cd
+745 coder 4 is compiling
+746 coder 4 >>
+coder 4 will compile ld4 rd5 2th time for 100, he last compiled: 510 ago
+848 coder 4 >>
+coder 4 released left dongle 4 right dongle 5
+848 coder 4 is debugging
+949 coder 4 is refactorin
+
+
+==43191== 
+==43191== Use --history-level=approx or =none to gain increased speed, at
+==43191== the cost of reduced accuracy of conflicting-access information
+==43191== For lists of detected and suppressed errors, rerun with: -s
+==43191== ERROR SUMMARY: 2 errors from 1 contexts (suppressed: 8736 from 126)

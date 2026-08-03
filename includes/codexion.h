@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:14 by itemlali          #+#    #+#             */
-/*   Updated: 2026/08/01 18:09:34 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/03 17:09:56 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,7 +108,6 @@ int						overflows_long_long(char *str);
 int						overflows_int(char *str);
 t_data					*initializer(char **argv);
 void					free_all(t_data *data);
-void					the_creator(t_data *data);
 void					clean_dongle_struct(t_data *data, int i);
 void					destroy_partial_dongle(
 							t_data *data, int i, t_init_phase phase);

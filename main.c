@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:28 by itemlali          #+#    #+#             */
-/*   Updated: 2026/08/01 22:05:10 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/03 19:49:02 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void release_dongles(t_coder *coder)
 {
 	coder->left_dongle->last_released = current_time();
 	coder->right_dongle->last_released = current_time();
-	safe_print(coder, "\n");
+	safe_print(coder, ">>");
 	printf("coder %d released left dongle %d right dongle %d\n", coder->id, coder->left_dongle->id, coder->right_dongle->id);
 	coder->left_dongle->in_use = FALSE;
 	coder->right_dongle->in_use = FALSE;
@@ -61,54 +61,45 @@ void take_dongles(t_coder *coder)
 	while(1)
 	{
 		pthread_mutex_lock(&first->dongle_lock);
-		safe_print(coder, "\n");
-		printf("coder %d took rd%d checking for cd\n",coder->id, first->id);
-		if (first->last_released != 0)
+		safe_print(coder, ">>");
+		printf("coder %d took 1st rd%d checking 1st cd\n",coder->id, first->id);
+		rls_time_1st = current_time() - first->last_released;
+		printf("rls_time_1st: %ld < dgl cd: %ld \n", rls_time_1st, coder->data->config->dongle_cooldown);
+		if (rls_time_1st < coder->data->config->dongle_cooldown)
 		{
-			rls_time_1st = current_time() - first->last_released;
-			if (rls_time_1st < coder->data->config->dongle_cooldown)
-			{
-				safe_print(coder, "\n");
-				printf("coder %d faced rd%d cd: %ld\n",coder->id, first->id , ((coder->data->config->dongle_cooldown - rls_time_1st) * 1000));
-				pthread_mutex_unlock(&first->dongle_lock);
-				usleep((coder->data->config->dongle_cooldown - rls_time_1st) * 1000);
-				continue;
-			}
-			if (second->in_use == TRUE)
-			{
-				safe_print(coder, "\n");
-				printf("]]coder %d found 2nd ld%d in use releasing rd%d\n",coder->id, second->id, first->id);
-				pthread_mutex_unlock(&first->dongle_lock);
-				usleep((coder->data->config->dongle_cooldown + coder->data->config->time_to_debug + coder->data->config->time_to_refactor) * 1000);
-				continue;
-			}
-			first->in_use = TRUE;
+			safe_print(coder, ">>");
+			printf("coder %d faced 1st rd%d cd: %ld\n",coder->id, first->id , ((coder->data->config->dongle_cooldown - rls_time_1st) * 1000));
+			pthread_mutex_unlock(&first->dongle_lock);
+			usleep((coder->data->config->dongle_cooldown - rls_time_1st) * 1000);
+			continue;
 		}
-		break;
-	}
-	while(1)
-	{
 		pthread_mutex_lock(&second->dongle_lock);
-		safe_print(coder, "\n");		
-		printf("coder %d took ld%d checking for cd\n",coder->id,second->id);
-		if (second->last_released != 0)
+		safe_print(coder, ">>");
+		printf("coder %d took 2nd ld%d checking for 2nd cd\n",coder->id,second->id);
+		rls_time_2nd = current_time() - second->last_released;
+		if (rls_time_2nd < coder->data->config->dongle_cooldown)
 		{
-			rls_time_2nd = current_time() - second->last_released;
-			if (rls_time_2nd < coder->data->config->dongle_cooldown)
-			{
-				pthread_mutex_unlock(&first->dongle_lock);
-				pthread_mutex_unlock(&second->dongle_lock);
-				safe_print(coder, "\n");
-				printf("###########coder %d faced ld%d releasing rd%d ld%d > sleep for: %ld\n",coder->id, second->id ,first->id, second->id, ((coder->data->config->dongle_cooldown - rls_time_2nd) * 1000));
-				usleep((coder->data->config->dongle_cooldown - rls_time_2nd) * 1000);
-				continue;
-			}
-			second->in_use = TRUE;
+			pthread_mutex_unlock(&first->dongle_lock);
+			pthread_mutex_unlock(&second->dongle_lock);
+			safe_print(coder, ">>");
+			printf("###########coder %d faced ld%d releasing rd%d ld%d > sleep for: %ld\n",coder->id, second->id ,first->id, second->id, ((coder->data->config->dongle_cooldown - rls_time_2nd) * 1000));
+			usleep((coder->data->config->dongle_cooldown - rls_time_2nd) * 1000);
+			continue;
 		}
+		if (second->in_use == TRUE)
+		{
+			safe_print(coder, ">>");
+			printf("]]coder %d found 2nd ld%d in use releasing rd%d & ld%d  & sleeping for %ld\n",coder->id, second->id, first->id, second->id, (coder->data->config->dongle_cooldown + coder->data->config->time_to_debug + coder->data->config->time_to_refactor) * 1000);
+			pthread_mutex_unlock(&first->dongle_lock);
+			pthread_mutex_unlock(&second->dongle_lock);
+			usleep((coder->data->config->dongle_cooldown + coder->data->config->time_to_debug + coder->data->config->time_to_refactor) * 1000);
+			continue;
+		}
+		first->in_use = TRUE;
+		second->in_use = TRUE;
 		break;
 	}
 }
-
 
 void	*routine(void *arg)
 {
@@ -116,14 +107,16 @@ void	*routine(void *arg)
 
 	coder = (t_coder *) arg;
 
+	if (coder->id % 2 == 0)
+		usleep(1000);
 	while(!check_sim_over(coder->data))
 	{
 		take_dongles(coder);
 		safe_print(coder, "is compiling");
 		pthread_mutex_lock(&coder->data->burnout_lock);
 		coder->compile_count++;
-		safe_print(coder, "\n");
-		printf("coder %d will ld%d rd%d %dth time for %ld, he last compiled: %ld ago\n", coder->id,coder->left_dongle->id, coder->right_dongle->id ,coder->compile_count,coder->data->config->time_to_compile , current_time() - coder->last_compiled);
+		safe_print(coder, ">>");
+		printf("coder %d will compile ld%d rd%d %dth time for %ld, he last compiled: %ld ago\n", coder->id,coder->left_dongle->id, coder->right_dongle->id ,coder->compile_count,coder->data->config->time_to_compile , current_time() - coder->last_compiled);
 		coder->last_compiled = current_time();
 		pthread_mutex_unlock(&coder->data->burnout_lock);
 		usleep(coder->data->config->time_to_compile * 1000);
@@ -151,8 +144,8 @@ void* monitor_routine(void *args)
 			pthread_mutex_lock(&data->burnout_lock);
 			if ((current_time() - data->coders[i].last_compiled) > data->config->time_to_burnout)
 				{
-					// safe_print(data->coders[0], "\n");
-					printf("BURNOUT !!!!!!!!!! monitor coder %d last compiled: %ld current time: %ld burnout: %ld diff: %ld\n",data->coders[i].id, data->coders[i].last_compiled , current_time(), data->config->time_to_burnout, (current_time() - data->coders[i].last_compiled));
+					// safe_print(data->coders[0], ">>");
+					printf("BURNOUT !!!!!!!!!! monitor coder %d burnout: %ld last compiled: %ld\n",data->coders[i].id, data->config->time_to_burnout, (current_time() - data->coders[i].last_compiled));
 					data->simulation_over = TRUE;
 					pthread_mutex_unlock(&data->burnout_lock);
 					return (NULL);
