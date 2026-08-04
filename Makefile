@@ -12,6 +12,7 @@ SRCS = main.c\
 	utils/ft_strlen.c\
 	utils/initializer.c\
 	utils/cleanup.c\
+	utils/elapsed.c
 
 OBJS = $(SRCS:.c=.o)
 

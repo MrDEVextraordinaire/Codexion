@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:14 by itemlali          #+#    #+#             */
-/*   Updated: 2026/08/03 17:09:56 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/04 11:18:45 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,14 +100,16 @@ typedef struct s_config
 
 int						ft_isdigit(char c);
 int						parsed_validated(int argc, char **argv);
-long				current_time(void);
-size_t					ft_strlen(const char *s);
-unsigned long long		ft_atoull(const char *nptr);
-long				ft_atol(const char *nptr);
 int						overflows_long_long(char *str);
 int						overflows_int(char *str);
-t_data					*initializer(char **argv);
+int						check_sim_over(t_data *data);
+long					current_time(void);
+long					ft_atol(const char *nptr);
+long 					elapsed(t_data* data);
 void					free_all(t_data *data);
 void					clean_dongle_struct(t_data *data, int i);
 void					destroy_partial_dongle(
-							t_data *data, int i, t_init_phase phase);
+						t_data *data, int i, t_init_phase phase);
+size_t					ft_strlen(const char *s);
+t_data					*initializer(char **argv);
+unsigned long long		ft_atoull(const char *nptr);
