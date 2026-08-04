@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 00:47:15 by itemlali          #+#    #+#             */
-/*   Updated: 2026/08/03 19:18:22 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/04 15:38:58 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ static t_data	*init_coders(t_data *data)
 	{
 		data->coders[i].id = i + 1;
 		data->coders[i].last_compiled = data->start_time;
-		printf("init coder %d last compiled %ld start time: %ld\n", data->coders[i].id, data->coders[i].last_compiled, data->start_time);
 		data->coders[i].compile_count = 0;
 		data->coders[i].left_dongle = &(data->dongles[i]);
 		data->coders[i].right_dongle = &(
@@ -47,7 +46,6 @@ static t_data	*dongle_init_loop(t_data *data)
 	{
 		data->dongles[i].id = i + 1;
 		data->dongles[i].last_released = current_time();
-		data->dongles[i].in_use = FALSE;
 		data->dongles[i].heap_size = 0;
 		data->dongles[i].min_heap = malloc(
 				sizeof(t_coder_queue) * data->config->number_of_coders);

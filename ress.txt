@@ -1,0 +1,4093 @@
+e
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 58000
+coder 1 released left dongle 1 right dongle 2
+1370 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1370 1 is debugging
+1372 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+1427 4 is refactorin
+1428 3 is compiling
+coder 3 will compile ld3 rd4 5th time for 60, he last compiled: 365 ago
+1430 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1430 5 is compiling
+coder 5 will compile ld5 rd1 4th time for 60, he last compiled: 246 ago
+1431 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+1489 3 is debugging
+1490 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 59000
+1491 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+coder 5 released left dongle 5 right dongle 1
+1491 5 is debugging
+1492 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+1549 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 2000
+1550 3 is refactorin
+1550 2 is compiling
+coder 2 will compile ld2 rd3 5th time for 60, he last compiled: 362 ago
+1552 5 is refactorin
+1552 4 is compiling
+coder 4 will compile ld4 rd5 6th time for 60, he last compiled: 247 ago
+coder 2 released left dongle 2 right dongle 3
+1611 2 is debugging
+1612 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 59000
+1612 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+coder 4 released left dongle 4 right dongle 5
+1613 4 is debugging
+1671 1 is compiling
+coder 1 will compile ld1 rd2 5th time for 60, he last compiled: 364 ago
+1674 2 is refactorin
+1674 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+1674 3 is compiling
+coder 3 will compile ld3 rd4 6th time for 60, he last compiled: 245 ago
+1675 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1732 1 is debugging
+1733 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1734 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 58000
+coder 3 released left dongle 3 right dongle 4
+1735 3 is debugging
+1735 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 60000
+1793 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1793 5 is compiling
+coder 5 will compile ld5 rd1 5th time for 60, he last compiled: 362 ago
+coder 2 took 2nd ld3 checking for 2nd cd
+coder 2 will compile ld2 rd3 6th time for 60, he last compiled: 255 ago
+coder 5 released left dongle 5 right dongle 1
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 59000
+coder 2 released left dongle 2 right dongle 3
+coder 4 will compile ld4 rd5 7th time for 60, he last compiled: 369 ago
+coder 4 released left dongle 4 right dongle 5
+==37746== 
+==37746== Use --history-level=approx or =none to gain increased speed, at
+==37746== the cost of reduced accuracy of conflicting-access information
+==37746== For lists of detected and suppressed errors, rerun with: -s
+==37746== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 7359 from 136)
+==37757== Helgrind, a thread error detector
+==37757== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==37757== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==37757== Command: ./codexion 5 800 60 60 60 5 60 fifo
+==37757== 
+Scheduler: fifo
+33 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 41 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 19000
+43 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 44 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 16000
+47 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 48 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 12000
+49 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 50 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 10000
+59 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+60 4 is compiling
+coder 4 will compile ld4 rd5 1th time for 60, he last compiled: 66 ago
+coder 4 released left dongle 4 right dongle 5
+124 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 58000
+125 4 is debugging
+183 3 is compiling
+coder 3 will compile ld3 rd4 1th time for 60, he last compiled: 188 ago
+186 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+244 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 59000
+244 3 is debugging
+246 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 57000
+303 2 is compiling
+coder 2 will compile ld2 rd3 1th time for 60, he last compiled: 308 ago
+304 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+306 4 is compiling
+coder 4 will compile ld4 rd5 2th time for 60, he last compiled: 246 ago
+307 3 is refactorin
+coder 2 released left dongle 2 right dongle 3
+364 2 is debugging
+364 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 59000
+coder 4 released left dongle 4 right dongle 5
+367 4 is debugging
+368 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 56000
+424 1 is compiling
+coder 1 will compile ld1 rd2 1th time for 60, he last compiled: 429 ago
+425 2 is refactorin
+426 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 1000
+427 3 is compiling
+coder 3 will compile ld3 rd4 2th time for 60, he last compiled: 244 ago
+427 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+486 1 is debugging
+487 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 57000
+488 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+coder 3 released left dongle 3 right dongle 4
+491 3 is debugging
+491 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+545 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+546 5 is compiling
+coder 5 will compile ld5 rd1 1th time for 60, he last compiled: 551 ago
+547 1 is refactorin
+550 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+551 2 is compiling
+coder 2 will compile ld2 rd3 2th time for 60, he last compiled: 247 ago
+551 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+606 5 is debugging
+607 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 59000
+608 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+coder 2 released left dongle 2 right dongle 3
+613 2 is debugging
+613 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+667 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 4000
+668 4 is compiling
+coder 4 will compile ld4 rd5 3th time for 60, he last compiled: 362 ago
+669 5 is refactorin
+673 1 is compiling
+coder 1 will compile ld1 rd2 2th time for 60, he last compiled: 249 ago
+674 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+730 4 is debugging
+731 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 47000
+coder 1 released left dongle 1 right dongle 2
+742 1 is debugging
+743 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 6 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 54000
+745 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 8 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 52000
+789 3 is compiling
+coder 3 will compile ld3 rd4 3th time for 60, he last compiled: 363 ago
+791 4 is refactorin
+799 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+800 5 is compiling
+coder 5 will compile ld5 rd1 2th time for 60, he last compiled: 254 ago
+803 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+851 3 is debugging
+852 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 58000
+854 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 56000
+coder 5 released left dongle 5 right dongle 1
+862 5 is debugging
+864 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 57000
+911 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 9000
+912 2 is compiling
+coder 2 will compile ld2 rd3 3th time for 60, he last compiled: 361 ago
+913 3 is refactorin
+921 4 is compiling
+coder 4 will compile ld4 rd5 4th time for 60, he last compiled: 252 ago
+922 5 is refactorin
+coder 2 released left dongle 2 right dongle 3
+973 2 is debugging
+974 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+975 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 57000
+coder 4 released left dongle 4 right dongle 5
+982 4 is debugging
+1033 1 is compiling
+coder 1 will compile ld1 rd2 3th time for 60, he last compiled: 360 ago
+1033 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 9000
+1034 2 is refactorin
+1043 4 is refactorin
+1043 3 is compiling
+coder 3 will compile ld3 rd4 4th time for 60, he last compiled: 254 ago
+coder 1 released left dongle 1 right dongle 2
+1094 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1095 1 is debugging
+1095 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+coder 3 released left dongle 3 right dongle 4
+1105 3 is debugging
+1105 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+1153 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 10000
+1155 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1155 5 is compiling
+coder 5 will compile ld5 rd1 3th time for 60, he last compiled: 355 ago
+1156 1 is refactorin
+1164 2 is compiling
+coder 2 will compile ld2 rd3 4th time for 60, he last compiled: 252 ago
+1165 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1216 5 is debugging
+1217 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+1219 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 56000
+coder 2 released left dongle 2 right dongle 3
+1225 2 is debugging
+1226 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+1276 4 is compiling
+coder 4 will compile ld4 rd5 5th time for 60, he last compiled: 355 ago
+1278 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 7000
+1280 5 is refactorin
+1286 2 is refactorin
+1286 1 is compiling
+coder 1 will compile ld1 rd2 4th time for 60, he last compiled: 254 ago
+coder 4 released left dongle 4 right dongle 5
+1338 4 is debugging
+1339 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 58000
+coder 1 released left dongle 1 right dongle 2
+1352 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+1354 1 is debugging
+1355 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 5 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 55000
+1398 3 is compiling
+coder 3 will compile ld3 rd4 5th time for 60, he last compiled: 354 ago
+1399 4 is refactorin
+1412 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1412 5 is compiling
+coder 5 will compile ld5 rd1 4th time for 60, he last compiled: 257 ago
+1414 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+1459 3 is debugging
+1460 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+1461 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 56000
+coder 5 released left dongle 5 right dongle 1
+1473 5 is debugging
+1475 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+1519 2 is compiling
+coder 2 will compile ld2 rd3 5th time for 60, he last compiled: 356 ago
+1521 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 12000
+1522 3 is refactorin
+1534 5 is refactorin
+1535 4 is compiling
+coder 4 will compile ld4 rd5 6th time for 60, he last compiled: 260 ago
+coder 2 released left dongle 2 right dongle 3
+1582 2 is debugging
+1583 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 57000
+1584 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 56000
+coder 4 released left dongle 4 right dongle 5
+1598 4 is debugging
+1641 1 is compiling
+coder 1 will compile ld1 rd2 5th time for 60, he last compiled: 350 ago
+1642 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 14000
+1644 2 is refactorin
+1658 3 is compiling
+coder 3 will compile ld3 rd4 6th time for 60, he last compiled: 260 ago
+1661 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1703 1 is debugging
+1703 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+1705 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 56000
+coder 3 released left dongle 3 right dongle 4
+1722 3 is debugging
+1722 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+1762 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 18000
+1764 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1765 5 is compiling
+coder 5 will compile ld5 rd1 5th time for 60, he last compiled: 354 ago
+1766 1 is refactorin
+coder 2 will compile ld2 rd3 6th time for 60, he last compiled: 262 ago
+coder 5 released left dongle 5 right dongle 1
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 56000
+coder 2 released left dongle 2 right dongle 3
+coder 4 will compile ld4 rd5 7th time for 60, he last compiled: 350 ago
+coder 4 released left dongle 4 right dongle 5
+==37757== 
+==37757== Use --history-level=approx or =none to gain increased speed, at
+==37757== the cost of reduced accuracy of conflicting-access information
+==37757== For lists of detected and suppressed errors, rerun with: -s
+==37757== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 7358 from 136)
+==37764== Helgrind, a thread error detector
+==37764== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==37764== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==37764== Command: ./codexion 5 800 60 60 60 5 60 fifo
+==37764== 
+Scheduler: fifo
+28 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 34 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 26000
+36 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 38 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 22000
+37 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 38 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 22000
+40 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 42 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 18000
+59 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+60 4 is compiling
+coder 4 will compile ld4 rd5 1th time for 60, he last compiled: 66 ago
+coder 4 released left dongle 4 right dongle 5
+126 4 is debugging
+127 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 54000
+184 3 is compiling
+coder 3 will compile ld3 rd4 1th time for 60, he last compiled: 189 ago
+187 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+245 3 is debugging
+246 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 58000
+248 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 56000
+305 2 is compiling
+coder 2 will compile ld2 rd3 1th time for 60, he last compiled: 310 ago
+306 3 is refactorin
+306 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+307 4 is compiling
+coder 4 will compile ld4 rd5 2th time for 60, he last compiled: 246 ago
+coder 2 released left dongle 2 right dongle 3
+367 2 is debugging
+369 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 56000
+coder 4 released left dongle 4 right dongle 5
+370 4 is debugging
+370 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 54000
+426 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 4000
+428 1 is compiling
+coder 1 will compile ld1 rd2 1th time for 60, he last compiled: 433 ago
+429 2 is refactorin
+431 4 is refactorin
+431 3 is compiling
+coder 3 will compile ld3 rd4 2th time for 60, he last compiled: 248 ago
+coder 1 released left dongle 1 right dongle 2
+490 1 is debugging
+491 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+492 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 58000
+coder 3 released left dongle 3 right dongle 4
+494 3 is debugging
+494 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 60000
+551 1 is refactorin
+551 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 2000
+554 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+554 5 is compiling
+coder 5 will compile ld5 rd1 1th time for 60, he last compiled: 560 ago
+555 3 is refactorin
+556 2 is compiling
+coder 2 will compile ld2 rd3 2th time for 60, he last compiled: 250 ago
+coder 2 released left dongle 2 right dongle 3
+616 2 is debugging
+coder 5 released left dongle 5 right dongle 1
+617 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 59000
+617 5 is debugging
+617 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+618 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+676 4 is compiling
+coder 4 will compile ld4 rd5 3th time for 60, he last compiled: 371 ago
+680 5 is refactorin
+680 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+680 1 is compiling
+coder 1 will compile ld1 rd2 2th time for 60, he last compiled: 253 ago
+681 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+738 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 53000
+745 4 is debugging
+coder 1 released left dongle 1 right dongle 2
+746 1 is debugging
+746 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 56000
+747 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 5 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 55000
+798 3 is compiling
+coder 3 will compile ld3 rd4 3th time for 60, he last compiled: 369 ago
+803 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+804 5 is compiling
+coder 5 will compile ld5 rd1 2th time for 60, he last compiled: 249 ago
+805 4 is refactorin
+806 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+861 3 is debugging
+862 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 58000
+coder 5 released left dongle 5 right dongle 1
+865 5 is debugging
+866 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 5 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 55000
+867 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+921 2 is compiling
+coder 2 will compile ld2 rd3 3th time for 60, he last compiled: 365 ago
+922 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 3000
+922 3 is refactorin
+925 4 is compiling
+coder 4 will compile ld4 rd5 4th time for 60, he last compiled: 247 ago
+926 5 is refactorin
+coder 2 released left dongle 2 right dongle 3
+984 2 is debugging
+985 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+985 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 58000
+coder 4 released left dongle 4 right dongle 5
+986 4 is debugging
+1044 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 2000
+1045 1 is compiling
+coder 1 will compile ld1 rd2 3th time for 60, he last compiled: 364 ago
+1046 4 is refactorin
+1047 2 is refactorin
+1048 3 is compiling
+coder 3 will compile ld3 rd4 4th time for 60, he last compiled: 247 ago
+coder 1 released left dongle 1 right dongle 2
+1107 1 is debugging
+1107 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1108 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+coder 3 released left dongle 3 right dongle 4
+1109 3 is debugging
+1110 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+1166 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 2000
+1167 1 is refactorin
+1168 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1168 5 is compiling
+coder 5 will compile ld5 rd1 3th time for 60, he last compiled: 364 ago
+1169 2 is compiling
+coder 2 will compile ld2 rd3 4th time for 60, he last compiled: 249 ago
+1170 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1230 5 is debugging
+1231 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 58000
+1232 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 57000
+coder 2 released left dongle 2 right dongle 3
+1234 2 is debugging
+1234 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+1290 4 is compiling
+coder 4 will compile ld4 rd5 5th time for 60, he last compiled: 365 ago
+1291 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 1000
+1292 5 is refactorin
+1294 1 is compiling
+coder 1 will compile ld1 rd2 4th time for 60, he last compiled: 249 ago
+1296 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1352 4 is debugging
+1353 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 58000
+coder 1 released left dongle 1 right dongle 2
+1356 1 is debugging
+1357 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+1359 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+1412 3 is compiling
+coder 3 will compile ld3 rd4 5th time for 60, he last compiled: 364 ago
+1414 4 is refactorin
+1417 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1417 5 is compiling
+coder 5 will compile ld5 rd1 4th time for 60, he last compiled: 249 ago
+1419 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+1473 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 59000
+1474 3 is debugging
+1475 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+coder 5 released left dongle 5 right dongle 1
+1481 5 is debugging
+1481 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+1536 3 is refactorin
+1536 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 4000
+1537 2 is compiling
+coder 2 will compile ld2 rd3 5th time for 60, he last compiled: 367 ago
+1541 5 is refactorin
+1541 4 is compiling
+coder 4 will compile ld4 rd5 6th time for 60, he last compiled: 250 ago
+coder 2 released left dongle 2 right dongle 3
+1599 2 is debugging
+1600 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 57000
+1601 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 56000
+coder 4 released left dongle 4 right dongle 5
+1602 4 is debugging
+1657 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 4000
+1658 1 is compiling
+coder 1 will compile ld1 rd2 5th time for 60, he last compiled: 364 ago
+1661 2 is refactorin
+1662 3 is compiling
+coder 3 will compile ld3 rd4 6th time for 60, he last compiled: 249 ago
+1662 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1720 1 is debugging
+1721 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+1722 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 56000
+coder 3 released left dongle 3 right dongle 4
+1724 3 is debugging
+1725 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 57000
+1780 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 2000
+1781 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1781 5 is compiling
+coder 5 will compile ld5 rd1 5th time for 60, he last compiled: 363 ago
+1782 1 is refactorin
+coder 2 will compile ld2 rd3 6th time for 60, he last compiled: 252 ago
+coder 5 released left dongle 5 right dongle 1
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 59000
+coder 2 released left dongle 2 right dongle 3
+coder 4 will compile ld4 rd5 7th time for 60, he last compiled: 361 ago
+coder 4 released left dongle 4 right dongle 5
+==37764== 
+==37764== Use --history-level=approx or =none to gain increased speed, at
+==37764== the cost of reduced accuracy of conflicting-access information
+==37764== For lists of detected and suppressed errors, rerun with: -s
+==37764== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 7420 from 136)
+==37777== Helgrind, a thread error detector
+==37777== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==37777== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==37777== Command: ./codexion 5 800 60 60 60 5 60 fifo
+==37777== 
+Scheduler: fifo
+22 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 28 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 32000
+29 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 31 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 29000
+32 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 33 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 27000
+35 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 36 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 24000
+60 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+61 4 is compiling
+coder 4 will compile ld4 rd5 1th time for 60, he last compiled: 66 ago
+coder 4 released left dongle 4 right dongle 5
+123 4 is debugging
+124 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 58000
+183 3 is compiling
+coder 3 will compile ld3 rd4 1th time for 60, he last compiled: 188 ago
+185 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+244 3 is debugging
+246 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 57000
+249 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 6 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 54000
+305 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+305 4 is compiling
+coder 4 will compile ld4 rd5 2th time for 60, he last compiled: 244 ago
+306 3 is refactorin
+309 2 is compiling
+coder 2 will compile ld2 rd3 1th time for 60, he last compiled: 314 ago
+coder 4 released left dongle 4 right dongle 5
+366 4 is debugging
+coder 2 released left dongle 2 right dongle 3
+370 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 59000
+371 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+372 2 is debugging
+427 4 is refactorin
+430 1 is compiling
+coder 1 will compile ld1 rd2 1th time for 60, he last compiled: 435 ago
+431 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+432 3 is compiling
+coder 3 will compile ld3 rd4 2th time for 60, he last compiled: 249 ago
+432 2 is refactorin
+coder 1 released left dongle 1 right dongle 2
+492 1 is debugging
+492 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+495 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 56000
+coder 3 released left dongle 3 right dongle 4
+496 3 is debugging
+498 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+552 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 4000
+552 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+553 5 is compiling
+coder 5 will compile ld5 rd1 1th time for 60, he last compiled: 558 ago
+553 1 is refactorin
+556 3 is refactorin
+557 2 is compiling
+coder 2 will compile ld2 rd3 2th time for 60, he last compiled: 247 ago
+coder 5 released left dongle 5 right dongle 1
+614 5 is debugging
+614 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 58000
+615 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 57000
+coder 2 released left dongle 2 right dongle 3
+617 2 is debugging
+618 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+673 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 2000
+675 4 is compiling
+coder 4 will compile ld4 rd5 3th time for 60, he last compiled: 369 ago
+676 5 is refactorin
+678 1 is compiling
+coder 1 will compile ld1 rd2 2th time for 60, he last compiled: 247 ago
+679 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+736 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+741 4 is debugging
+coder 1 released left dongle 1 right dongle 2
+742 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 57000
+742 1 is debugging
+743 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 56000
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 53000
+797 3 is compiling
+coder 3 will compile ld3 rd4 3th time for 60, he last compiled: 365 ago
+799 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+799 5 is compiling
+coder 5 will compile ld5 rd1 2th time for 60, he last compiled: 247 ago
+801 4 is refactorin
+804 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+859 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 60000
+860 3 is debugging
+coder 5 released left dongle 5 right dongle 1
+861 5 is debugging
+862 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 56000
+865 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 56000
+919 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 2000
+920 2 is compiling
+coder 2 will compile ld2 rd3 3th time for 60, he last compiled: 363 ago
+921 3 is refactorin
+921 5 is refactorin
+922 4 is compiling
+coder 4 will compile ld4 rd5 4th time for 60, he last compiled: 247 ago
+coder 2 released left dongle 2 right dongle 3
+982 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 58000
+982 2 is debugging
+982 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 57000
+coder 4 released left dongle 4 right dongle 5
+983 4 is debugging
+1040 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 3000
+1041 1 is compiling
+coder 1 will compile ld1 rd2 3th time for 60, he last compiled: 363 ago
+1043 2 is refactorin
+1043 3 is compiling
+coder 3 will compile ld3 rd4 4th time for 60, he last compiled: 245 ago
+1044 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1102 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1103 1 is debugging
+1104 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+coder 3 released left dongle 3 right dongle 4
+1107 3 is debugging
+1108 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 59000
+1162 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1164 5 is compiling
+coder 5 will compile ld5 rd1 3th time for 60, he last compiled: 364 ago
+1165 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 2000
+1165 1 is refactorin
+1168 2 is compiling
+coder 2 will compile ld2 rd3 4th time for 60, he last compiled: 249 ago
+1169 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1225 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 59000
+1226 5 is debugging
+1226 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+coder 2 released left dongle 2 right dongle 3
+1230 2 is debugging
+1230 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+1286 4 is compiling
+coder 4 will compile ld4 rd5 5th time for 60, he last compiled: 364 ago
+1287 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 2000
+1287 5 is refactorin
+1289 1 is compiling
+coder 1 will compile ld1 rd2 4th time for 60, he last compiled: 248 ago
+1290 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1347 4 is debugging
+1347 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 60000
+coder 1 released left dongle 1 right dongle 2
+1352 1 is debugging
+1352 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+1353 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 58000
+1407 4 is refactorin
+1408 3 is compiling
+coder 3 will compile ld3 rd4 5th time for 60, he last compiled: 364 ago
+1411 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1411 5 is compiling
+coder 5 will compile ld5 rd1 4th time for 60, he last compiled: 247 ago
+1413 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+1468 3 is debugging
+1469 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 59000
+1469 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 59000
+coder 5 released left dongle 5 right dongle 1
+1472 5 is debugging
+1473 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+1529 3 is refactorin
+1529 2 is compiling
+coder 2 will compile ld2 rd3 5th time for 60, he last compiled: 360 ago
+1530 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 2000
+1534 4 is compiling
+coder 4 will compile ld4 rd5 6th time for 60, he last compiled: 248 ago
+1535 5 is refactorin
+coder 2 released left dongle 2 right dongle 3
+1590 2 is debugging
+1590 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 60000
+1591 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 59000
+coder 4 released left dongle 4 right dongle 5
+1595 4 is debugging
+1650 2 is refactorin
+1653 1 is compiling
+coder 1 will compile ld1 rd2 5th time for 60, he last compiled: 363 ago
+1653 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 2000
+1659 3 is compiling
+coder 3 will compile ld3 rd4 6th time for 60, he last compiled: 251 ago
+1660 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1713 1 is debugging
+1715 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 58000
+1716 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 57000
+coder 3 released left dongle 3 right dongle 4
+1720 3 is debugging
+1720 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 60000
+1774 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1774 5 is compiling
+coder 5 will compile ld5 rd1 5th time for 60, he last compiled: 362 ago
+coder 2 took 2nd ld3 checking for 2nd cd
+coder 2 will compile ld2 rd3 6th time for 60, he last compiled: 251 ago
+coder 5 released left dongle 5 right dongle 1
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 59000
+coder 2 released left dongle 2 right dongle 3
+coder 4 will compile ld4 rd5 7th time for 60, he last compiled: 362 ago
+coder 4 released left dongle 4 right dongle 5
+==37777== 
+==37777== Use --history-level=approx or =none to gain increased speed, at
+==37777== the cost of reduced accuracy of conflicting-access information
+==37777== For lists of detected and suppressed errors, rerun with: -s
+==37777== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 7336 from 140)
+==37789== Helgrind, a thread error detector
+==37789== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==37789== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==37789== Command: ./codexion 5 800 60 60 60 5 60 fifo
+==37789== 
+Scheduler: fifo
+23 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 30 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 30000
+31 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 33 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 27000
+34 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 36 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 24000
+35 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 38 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 22000
+58 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+59 4 is compiling
+coder 4 will compile ld4 rd5 1th time for 60, he last compiled: 64 ago
+coder 4 released left dongle 4 right dongle 5
+122 4 is debugging
+123 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 57000
+182 3 is compiling
+coder 3 will compile ld3 rd4 1th time for 60, he last compiled: 188 ago
+184 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+244 3 is debugging
+245 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 58000
+247 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 56000
+304 2 is compiling
+coder 2 will compile ld2 rd3 1th time for 60, he last compiled: 312 ago
+308 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+309 4 is compiling
+coder 4 will compile ld4 rd5 2th time for 60, he last compiled: 249 ago
+311 3 is refactorin
+coder 4 released left dongle 4 right dongle 5
+370 4 is debugging
+coder 2 released left dongle 2 right dongle 3
+371 2 is debugging
+372 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 58000
+374 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 57000
+431 4 is refactorin
+432 1 is compiling
+coder 1 will compile ld1 rd2 1th time for 60, he last compiled: 437 ago
+433 2 is refactorin
+433 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+433 3 is compiling
+coder 3 will compile ld3 rd4 2th time for 60, he last compiled: 250 ago
+coder 1 released left dongle 1 right dongle 2
+493 1 is debugging
+494 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+495 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+coder 3 released left dongle 3 right dongle 4
+496 3 is debugging
+496 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 59000
+553 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+553 5 is compiling
+coder 5 will compile ld5 rd1 1th time for 60, he last compiled: 558 ago
+554 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 2000
+555 1 is refactorin
+556 3 is refactorin
+557 2 is compiling
+coder 2 will compile ld2 rd3 2th time for 60, he last compiled: 249 ago
+coder 5 released left dongle 5 right dongle 1
+615 5 is debugging
+615 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 58000
+617 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 56000
+coder 2 released left dongle 2 right dongle 3
+620 2 is debugging
+620 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+675 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 4000
+676 4 is compiling
+coder 4 will compile ld4 rd5 3th time for 60, he last compiled: 367 ago
+678 5 is refactorin
+681 2 is refactorin
+682 1 is compiling
+coder 1 will compile ld1 rd2 2th time for 60, he last compiled: 251 ago
+coder 4 released left dongle 4 right dongle 5
+739 4 is debugging
+coder 1 released left dongle 1 right dongle 2
+761 1 is debugging
+762 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 36000
+764 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 19 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 41000
+765 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 20 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 40000
+800 3 is compiling
+coder 3 will compile ld3 rd4 3th time for 60, he last compiled: 367 ago
+804 4 is refactorin
+805 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+805 5 is compiling
+coder 5 will compile ld5 rd1 2th time for 60, he last compiled: 251 ago
+822 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+861 3 is debugging
+861 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 58000
+865 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 5 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 55000
+coder 5 released left dongle 5 right dongle 1
+866 5 is debugging
+882 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 17 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 43000
+920 2 is compiling
+coder 2 will compile ld2 rd3 3th time for 60, he last compiled: 363 ago
+922 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 3000
+923 3 is refactorin
+926 4 is compiling
+coder 4 will compile ld4 rd5 4th time for 60, he last compiled: 251 ago
+928 5 is refactorin
+coder 2 released left dongle 2 right dongle 3
+982 2 is debugging
+983 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 57000
+985 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 56000
+coder 4 released left dongle 4 right dongle 5
+988 4 is debugging
+1041 1 is compiling
+coder 1 will compile ld1 rd2 3th time for 60, he last compiled: 359 ago
+1043 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 4000
+1044 2 is refactorin
+1048 3 is compiling
+coder 3 will compile ld3 rd4 4th time for 60, he last compiled: 248 ago
+1049 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1103 1 is debugging
+1104 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+1106 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 5 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 55000
+coder 3 released left dongle 3 right dongle 4
+1110 3 is debugging
+1111 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 57000
+1163 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 5000
+1164 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1164 5 is compiling
+coder 5 will compile ld5 rd1 3th time for 60, he last compiled: 358 ago
+1165 1 is refactorin
+1169 2 is compiling
+coder 2 will compile ld2 rd3 4th time for 60, he last compiled: 248 ago
+1171 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1225 5 is debugging
+1225 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 60000
+1226 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+coder 2 released left dongle 2 right dongle 3
+1230 2 is debugging
+1231 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+1285 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 4000
+1286 5 is refactorin
+1287 4 is compiling
+coder 4 will compile ld4 rd5 5th time for 60, he last compiled: 360 ago
+1290 1 is compiling
+coder 1 will compile ld1 rd2 4th time for 60, he last compiled: 249 ago
+1292 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1349 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 59000
+1350 4 is debugging
+coder 1 released left dongle 1 right dongle 2
+1353 1 is debugging
+1354 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 58000
+1354 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+1409 3 is compiling
+coder 3 will compile ld3 rd4 5th time for 60, he last compiled: 360 ago
+1411 4 is refactorin
+1413 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1414 5 is compiling
+coder 5 will compile ld5 rd1 4th time for 60, he last compiled: 250 ago
+1414 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+1470 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 59000
+1472 3 is debugging
+1472 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+coder 5 released left dongle 5 right dongle 1
+1475 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+1476 5 is debugging
+1531 2 is compiling
+coder 2 will compile ld2 rd3 5th time for 60, he last compiled: 361 ago
+1531 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 3000
+1532 3 is refactorin
+1535 4 is compiling
+coder 4 will compile ld4 rd5 6th time for 60, he last compiled: 248 ago
+1537 5 is refactorin
+coder 2 released left dongle 2 right dongle 3
+1592 2 is debugging
+1592 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 59000
+1593 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+coder 4 released left dongle 4 right dongle 5
+1595 4 is debugging
+1652 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 3000
+1652 1 is compiling
+coder 1 will compile ld1 rd2 5th time for 60, he last compiled: 362 ago
+1653 2 is refactorin
+1656 3 is compiling
+coder 3 will compile ld3 rd4 6th time for 60, he last compiled: 247 ago
+1656 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1713 1 is debugging
+1714 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1714 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 59000
+coder 3 released left dongle 3 right dongle 4
+1717 3 is debugging
+1718 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+1774 1 is refactorin
+1774 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 1000
+1775 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1775 5 is compiling
+coder 5 will compile ld5 rd1 5th time for 60, he last compiled: 362 ago
+coder 2 will compile ld2 rd3 6th time for 60, he last compiled: 249 ago
+coder 5 released left dongle 5 right dongle 1
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 59000
+coder 2 released left dongle 2 right dongle 3
+coder 4 will compile ld4 rd5 7th time for 60, he last compiled: 364 ago
+coder 4 released left dongle 4 right dongle 5
+==37789== 
+==37789== Use --history-level=approx or =none to gain increased speed, at
+==37789== the cost of reduced accuracy of conflicting-access information
+==37789== For lists of detected and suppressed errors, rerun with: -s
+==37789== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 7264 from 136)
+==37798== Helgrind, a thread error detector
+==37798== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==37798== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==37798== Command: ./codexion 5 800 60 60 60 5 60 fifo
+==37798== 
+Scheduler: fifo
+29 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 35 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 25000
+37 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 38 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 22000
+38 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 39 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 21000
+42 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 43 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 17000
+60 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+61 4 is compiling
+coder 4 will compile ld4 rd5 1th time for 60, he last compiled: 66 ago
+coder 4 released left dongle 4 right dongle 5
+124 4 is debugging
+124 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 57000
+183 3 is compiling
+coder 3 will compile ld3 rd4 1th time for 60, he last compiled: 188 ago
+184 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+245 3 is debugging
+246 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 57000
+248 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 56000
+306 2 is compiling
+coder 2 will compile ld2 rd3 1th time for 60, he last compiled: 312 ago
+308 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+308 4 is compiling
+coder 4 will compile ld4 rd5 2th time for 60, he last compiled: 247 ago
+309 3 is refactorin
+coder 2 released left dongle 2 right dongle 3
+368 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 60000
+369 2 is debugging
+coder 4 released left dongle 4 right dongle 5
+369 4 is debugging
+370 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+428 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+429 3 is compiling
+coder 3 will compile ld3 rd4 2th time for 60, he last compiled: 246 ago
+430 2 is refactorin
+430 1 is compiling
+coder 1 will compile ld1 rd2 1th time for 60, he last compiled: 435 ago
+431 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+492 3 is debugging
+494 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+coder 1 released left dongle 1 right dongle 2
+495 1 is debugging
+496 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+496 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 59000
+553 3 is refactorin
+553 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+554 4 is compiling
+coder 4 will compile ld4 rd5 3th time for 60, he last compiled: 245 ago
+555 1 is refactorin
+556 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+556 2 is compiling
+coder 2 will compile ld2 rd3 2th time for 60, he last compiled: 249 ago
+coder 4 released left dongle 4 right dongle 5
+616 4 is debugging
+617 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+###########coder 5 faced ld5 releasing rd1 ld5 > sleep for: 56000
+coder 2 released left dongle 2 right dongle 3
+618 2 is debugging
+619 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+674 5 is compiling
+coder 5 will compile ld5 rd1 1th time for 60, he last compiled: 680 ago
+677 4 is refactorin
+679 2 is refactorin
+680 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+680 3 is compiling
+coder 3 will compile ld3 rd4 3th time for 60, he last compiled: 252 ago
+coder 5 released left dongle 5 right dongle 1
+736 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 60000
+737 5 is debugging
+739 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 121 < dgl cd: 60 
+coder 3 released left dongle 3 right dongle 4
+741 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 57000
+745 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 56000
+745 3 is debugging
+797 5 is refactorin
+801 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+802 4 is compiling
+coder 4 will compile ld4 rd5 4th time for 60, he last compiled: 248 ago
+803 2 is compiling
+coder 2 will compile ld2 rd3 3th time for 60, he last compiled: 248 ago
+806 3 is refactorin
+coder 4 released left dongle 4 right dongle 5
+865 4 is debugging
+coder 2 released left dongle 2 right dongle 3
+867 2 is debugging
+868 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 59000
+868 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+926 4 is refactorin
+927 1 is compiling
+coder 1 will compile ld1 rd2 2th time for 60, he last compiled: 496 ago
+929 2 is refactorin
+929 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+930 3 is compiling
+coder 3 will compile ld3 rd4 4th time for 60, he last compiled: 249 ago
+coder 1 released left dongle 1 right dongle 2
+988 1 is debugging
+989 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+coder 3 released left dongle 3 right dongle 4
+991 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 59000
+991 3 is debugging
+992 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 56000
+1048 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 1000
+1049 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1050 5 is compiling
+coder 5 will compile ld5 rd1 2th time for 60, he last compiled: 375 ago
+1050 1 is refactorin
+1051 2 is compiling
+coder 2 will compile ld2 rd3 4th time for 60, he last compiled: 247 ago
+1052 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1111 5 is debugging
+1112 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+1113 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 57000
+coder 2 released left dongle 2 right dongle 3
+1114 2 is debugging
+1114 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+1171 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 2000
+1172 4 is compiling
+coder 4 will compile ld4 rd5 5th time for 60, he last compiled: 369 ago
+1173 5 is refactorin
+1173 1 is compiling
+coder 1 will compile ld1 rd2 3th time for 60, he last compiled: 245 ago
+1175 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1234 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 59000
+1234 4 is debugging
+coder 1 released left dongle 1 right dongle 2
+1235 1 is debugging
+1235 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+1236 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+1294 3 is compiling
+coder 3 will compile ld3 rd4 5th time for 60, he last compiled: 364 ago
+1295 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1296 5 is compiling
+coder 5 will compile ld5 rd1 3th time for 60, he last compiled: 246 ago
+1297 4 is refactorin
+1298 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+1355 3 is debugging
+1356 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 59000
+coder 5 released left dongle 5 right dongle 1
+1357 5 is debugging
+1359 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 57000
+1360 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 5 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 55000
+1416 2 is compiling
+coder 2 will compile ld2 rd3 5th time for 60, he last compiled: 365 ago
+1416 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+1417 4 is compiling
+coder 4 will compile ld4 rd5 6th time for 60, he last compiled: 244 ago
+1417 3 is refactorin
+1420 5 is refactorin
+coder 2 released left dongle 2 right dongle 3
+1477 2 is debugging
+1477 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 58000
+1478 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+coder 4 released left dongle 4 right dongle 5
+1479 4 is debugging
+1536 1 is compiling
+coder 1 will compile ld1 rd2 4th time for 60, he last compiled: 364 ago
+1537 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 2000
+1537 2 is refactorin
+1539 3 is compiling
+coder 3 will compile ld3 rd4 6th time for 60, he last compiled: 244 ago
+1540 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1598 1 is debugging
+1598 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+1600 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+coder 3 released left dongle 3 right dongle 4
+1603 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+1605 3 is debugging
+1658 1 is refactorin
+1659 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 3000
+1660 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1660 5 is compiling
+coder 5 will compile ld5 rd1 4th time for 60, he last compiled: 364 ago
+1662 2 is compiling
+coder 2 will compile ld2 rd3 6th time for 60, he last compiled: 246 ago
+1665 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1721 5 is debugging
+1722 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 58000
+1722 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+coder 2 released left dongle 2 right dongle 3
+1723 2 is debugging
+1726 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 57000
+1780 4 is compiling
+coder 4 will compile ld4 rd5 7th time for 60, he last compiled: 363 ago
+1781 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 2000
+1781 5 is refactorin
+1783 1 is compiling
+coder 1 will compile ld1 rd2 5th time for 60, he last compiled: 246 ago
+1784 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1841 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 59000
+1842 4 is debugging
+coder 1 released left dongle 1 right dongle 2
+1844 1 is debugging
+1844 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 60000
+1845 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 58000
+1902 3 is compiling
+coder 3 will compile ld3 rd4 7th time for 60, he last compiled: 363 ago
+1904 1 is refactorin
+1905 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1905 5 is compiling
+coder 5 will compile ld5 rd1 5th time for 60, he last compiled: 246 ago
+1906 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 59000
+coder 5 released left dongle 5 right dongle 1
+coder 2 will compile ld2 rd3 7th time for 60, he last compiled: 362 ago
+coder 2 released left dongle 2 right dongle 3
+==37798== 
+==37798== Use --history-level=approx or =none to gain increased speed, at
+==37798== the cost of reduced accuracy of conflicting-access information
+==37798== For lists of detected and suppressed errors, rerun with: -s
+==37798== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 7829 from 136)
+==37809== Helgrind, a thread error detector
+==37809== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==37809== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==37809== Command: ./codexion 5 800 60 60 60 5 60 fifo
+==37809== 
+Scheduler: fifo
+22 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 29 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 31000
+30 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 32 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 28000
+32 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 33 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 27000
+36 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 37 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 23000
+60 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+60 4 is compiling
+coder 4 will compile ld4 rd5 1th time for 60, he last compiled: 65 ago
+coder 4 released left dongle 4 right dongle 5
+123 4 is debugging
+124 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 57000
+183 3 is compiling
+coder 3 will compile ld3 rd4 1th time for 60, he last compiled: 188 ago
+185 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+245 3 is debugging
+246 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 58000
+248 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 56000
+305 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+306 4 is compiling
+coder 4 will compile ld4 rd5 2th time for 60, he last compiled: 245 ago
+307 2 is compiling
+coder 2 will compile ld2 rd3 1th time for 60, he last compiled: 311 ago
+309 3 is refactorin
+coder 4 released left dongle 4 right dongle 5
+368 4 is debugging
+coder 2 released left dongle 2 right dongle 3
+370 2 is debugging
+371 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 57000
+373 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 56000
+428 4 is refactorin
+432 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+433 3 is compiling
+coder 3 will compile ld3 rd4 2th time for 60, he last compiled: 249 ago
+434 1 is compiling
+coder 1 will compile ld1 rd2 1th time for 60, he last compiled: 438 ago
+435 2 is refactorin
+coder 3 released left dongle 3 right dongle 4
+495 3 is debugging
+495 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+coder 1 released left dongle 1 right dongle 2
+497 1 is debugging
+498 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+499 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+555 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+556 4 is compiling
+coder 4 will compile ld4 rd5 3th time for 60, he last compiled: 249 ago
+557 3 is refactorin
+561 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+561 2 is compiling
+coder 2 will compile ld2 rd3 2th time for 60, he last compiled: 254 ago
+563 1 is refactorin
+coder 4 released left dongle 4 right dongle 5
+618 4 is debugging
+618 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+###########coder 5 faced ld5 releasing rd1 ld5 > sleep for: 58000
+coder 2 released left dongle 2 right dongle 3
+624 2 is debugging
+624 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+678 5 is compiling
+coder 5 will compile ld5 rd1 1th time for 60, he last compiled: 684 ago
+681 4 is refactorin
+684 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+685 3 is compiling
+coder 3 will compile ld3 rd4 3th time for 60, he last compiled: 252 ago
+686 2 is refactorin
+coder 5 released left dongle 5 right dongle 1
+742 5 is debugging
+743 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+coder 3 released left dongle 3 right dongle 4
+746 3 is debugging
+747 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+758 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 135 < dgl cd: 60 
+759 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 46000
+803 5 is refactorin
+806 2 is compiling
+coder 2 will compile ld2 rd3 3th time for 60, he last compiled: 247 ago
+810 3 is refactorin
+816 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+817 4 is compiling
+coder 4 will compile ld4 rd5 4th time for 60, he last compiled: 260 ago
+coder 2 released left dongle 2 right dongle 3
+870 2 is debugging
+871 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 59000
+872 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+coder 4 released left dongle 4 right dongle 5
+878 4 is debugging
+931 1 is compiling
+coder 1 will compile ld1 rd2 2th time for 60, he last compiled: 496 ago
+935 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 2000
+936 2 is refactorin
+938 3 is compiling
+coder 3 will compile ld3 rd4 4th time for 60, he last compiled: 253 ago
+939 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+995 1 is debugging
+996 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 57000
+998 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+coder 3 released left dongle 3 right dongle 4
+1000 3 is debugging
+1000 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+1055 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1056 5 is compiling
+coder 5 will compile ld5 rd1 2th time for 60, he last compiled: 375 ago
+1058 1 is refactorin
+1059 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+1059 2 is compiling
+coder 2 will compile ld2 rd3 4th time for 60, he last compiled: 250 ago
+1061 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1120 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+1121 5 is debugging
+1122 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 55000
+coder 2 released left dongle 2 right dongle 3
+1124 2 is debugging
+1125 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+1179 4 is compiling
+coder 4 will compile ld4 rd5 5th time for 60, he last compiled: 362 ago
+1180 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 3000
+1182 5 is refactorin
+1185 1 is compiling
+coder 1 will compile ld1 rd2 3th time for 60, he last compiled: 251 ago
+1186 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1241 4 is debugging
+1242 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 58000
+coder 1 released left dongle 1 right dongle 2
+1246 1 is debugging
+1247 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1248 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+1301 3 is compiling
+coder 3 will compile ld3 rd4 5th time for 60, he last compiled: 362 ago
+1302 4 is refactorin
+1307 1 is refactorin
+1307 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1308 5 is compiling
+coder 5 will compile ld5 rd1 3th time for 60, he last compiled: 252 ago
+coder 3 released left dongle 3 right dongle 4
+1363 3 is debugging
+1364 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 58000
+1365 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 5 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 55000
+coder 5 released left dongle 5 right dongle 1
+1370 5 is debugging
+1371 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+1423 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 6000
+1424 2 is compiling
+coder 2 will compile ld2 rd3 5th time for 60, he last compiled: 364 ago
+1425 3 is refactorin
+1430 4 is compiling
+coder 4 will compile ld4 rd5 6th time for 60, he last compiled: 250 ago
+1431 5 is refactorin
+coder 2 released left dongle 2 right dongle 3
+1487 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 58000
+1488 2 is debugging
+1489 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 5 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 55000
+coder 4 released left dongle 4 right dongle 5
+1491 4 is debugging
+1546 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 5000
+1548 1 is compiling
+coder 1 will compile ld1 rd2 4th time for 60, he last compiled: 364 ago
+1550 2 is refactorin
+1552 3 is compiling
+coder 3 will compile ld3 rd4 6th time for 60, he last compiled: 250 ago
+1553 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1611 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1612 1 is debugging
+1613 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 56000
+coder 3 released left dongle 3 right dongle 4
+1615 3 is debugging
+1615 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+1671 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 2000
+1674 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1676 5 is compiling
+coder 5 will compile ld5 rd1 4th time for 60, he last compiled: 368 ago
+1677 1 is refactorin
+1677 2 is compiling
+coder 2 will compile ld2 rd3 6th time for 60, he last compiled: 253 ago
+1679 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1738 5 is debugging
+1739 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 57000
+1742 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 54000
+coder 2 released left dongle 2 right dongle 3
+1744 2 is debugging
+1745 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+1798 4 is compiling
+coder 4 will compile ld4 rd5 7th time for 60, he last compiled: 368 ago
+1799 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 3000
+1800 5 is refactorin
+1804 1 is compiling
+coder 1 will compile ld1 rd2 5th time for 60, he last compiled: 255 ago
+1805 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1859 4 is debugging
+1860 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 59000
+coder 1 released left dongle 1 right dongle 2
+1865 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1866 1 is debugging
+1867 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 58000
+1920 3 is compiling
+coder 3 will compile ld3 rd4 7th time for 60, he last compiled: 367 ago
+1923 4 is refactorin
+1925 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1926 5 is compiling
+coder 5 will compile ld5 rd1 5th time for 60, he last compiled: 249 ago
+coder 3 released left dongle 3 right dongle 4
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 58000
+coder 5 released left dongle 5 right dongle 1
+coder 2 will compile ld2 rd3 7th time for 60, he last compiled: 367 ago
+coder 2 released left dongle 2 right dongle 3
+==37809== 
+==37809== Use --history-level=approx or =none to gain increased speed, at
+==37809== the cost of reduced accuracy of conflicting-access information
+==37809== For lists of detected and suppressed errors, rerun with: -s
+==37809== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 7793 from 136)
+==37816== Helgrind, a thread error detector
+==37816== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==37816== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==37816== Command: ./codexion 5 800 60 60 60 5 60 fifo
+==37816== 
+Scheduler: fifo
+22 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 28 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 32000
+31 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 32 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 28000
+33 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 35 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 25000
+38 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 39 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 21000
+59 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+60 4 is compiling
+coder 4 will compile ld4 rd5 1th time for 60, he last compiled: 66 ago
+coder 4 released left dongle 4 right dongle 5
+124 4 is debugging
+125 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 57000
+183 3 is compiling
+coder 3 will compile ld3 rd4 1th time for 60, he last compiled: 188 ago
+185 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+244 3 is debugging
+245 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 59000
+246 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 57000
+306 3 is refactorin
+308 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+309 4 is compiling
+coder 4 will compile ld4 rd5 2th time for 60, he last compiled: 248 ago
+310 2 is compiling
+coder 2 will compile ld2 rd3 1th time for 60, he last compiled: 315 ago
+coder 4 released left dongle 4 right dongle 5
+371 4 is debugging
+coder 2 released left dongle 2 right dongle 3
+371 2 is debugging
+371 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 60000
+375 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 56000
+432 4 is refactorin
+432 1 is compiling
+coder 1 will compile ld1 rd2 1th time for 60, he last compiled: 437 ago
+433 2 is refactorin
+434 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+434 3 is compiling
+coder 3 will compile ld3 rd4 2th time for 60, he last compiled: 251 ago
+coder 1 released left dongle 1 right dongle 2
+493 1 is debugging
+494 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 59000
+494 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+coder 3 released left dongle 3 right dongle 4
+495 3 is debugging
+495 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 59000
+553 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 1000
+554 1 is refactorin
+554 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+554 4 is compiling
+coder 4 will compile ld4 rd5 3th time for 60, he last compiled: 246 ago
+555 2 is compiling
+coder 2 will compile ld2 rd3 2th time for 60, he last compiled: 245 ago
+555 3 is refactorin
+coder 4 released left dongle 4 right dongle 5
+617 4 is debugging
+coder 2 released left dongle 2 right dongle 3
+617 2 is debugging
+617 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 60000
+618 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+###########coder 5 faced ld5 releasing rd1 ld5 > sleep for: 58000
+676 5 is compiling
+coder 5 will compile ld5 rd1 1th time for 60, he last compiled: 682 ago
+677 2 is refactorin
+677 4 is refactorin
+678 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+678 3 is compiling
+coder 3 will compile ld3 rd4 3th time for 60, he last compiled: 244 ago
+coder 5 released left dongle 5 right dongle 1
+738 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+739 5 is debugging
+739 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 123 < dgl cd: 60 
+coder 3 released left dongle 3 right dongle 4
+743 3 is debugging
+743 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 58000
+744 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+799 5 is refactorin
+802 2 is compiling
+coder 2 will compile ld2 rd3 3th time for 60, he last compiled: 248 ago
+803 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+804 4 is compiling
+coder 4 will compile ld4 rd5 4th time for 60, he last compiled: 249 ago
+805 3 is refactorin
+coder 2 released left dongle 2 right dongle 3
+864 2 is debugging
+864 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 59000
+coder 4 released left dongle 4 right dongle 5
+866 4 is debugging
+870 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 6 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 54000
+924 1 is compiling
+coder 1 will compile ld1 rd2 2th time for 60, he last compiled: 492 ago
+925 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 1000
+925 2 is refactorin
+926 3 is compiling
+coder 3 will compile ld3 rd4 4th time for 60, he last compiled: 249 ago
+928 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+986 1 is debugging
+987 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+989 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 56000
+coder 3 released left dongle 3 right dongle 4
+992 3 is debugging
+992 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 59000
+1046 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1046 5 is compiling
+coder 5 will compile ld5 rd1 2th time for 60, he last compiled: 369 ago
+1047 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 4000
+1048 1 is refactorin
+1052 2 is compiling
+coder 2 will compile ld2 rd3 4th time for 60, he last compiled: 249 ago
+1052 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1108 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+1110 5 is debugging
+1110 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 57000
+coder 2 released left dongle 2 right dongle 3
+1113 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+1113 2 is debugging
+1168 4 is compiling
+coder 4 will compile ld4 rd5 5th time for 60, he last compiled: 363 ago
+1169 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 3000
+1171 5 is refactorin
+1173 1 is compiling
+coder 1 will compile ld1 rd2 3th time for 60, he last compiled: 249 ago
+1174 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1229 4 is debugging
+1229 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 59000
+coder 1 released left dongle 1 right dongle 2
+1234 1 is debugging
+1235 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+1236 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+1289 3 is compiling
+coder 3 will compile ld3 rd4 5th time for 60, he last compiled: 363 ago
+1292 4 is refactorin
+1294 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1294 5 is compiling
+coder 5 will compile ld5 rd1 3th time for 60, he last compiled: 248 ago
+1295 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+1353 3 is debugging
+1353 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+1355 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 56000
+coder 5 released left dongle 5 right dongle 1
+rls_time_1st: 6 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 54000
+1359 5 is debugging
+1360 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 6 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 54000
+1413 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 1000
+1414 2 is compiling
+coder 2 will compile ld2 rd3 5th time for 60, he last compiled: 362 ago
+1414 3 is refactorin
+1415 4 is compiling
+coder 4 will compile ld4 rd5 6th time for 60, he last compiled: 248 ago
+1420 5 is refactorin
+coder 2 released left dongle 2 right dongle 3
+1475 2 is debugging
+1475 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 59000
+1476 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 57000
+coder 4 released left dongle 4 right dongle 5
+1477 4 is debugging
+1534 1 is compiling
+coder 1 will compile ld1 rd2 4th time for 60, he last compiled: 362 ago
+1536 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 1000
+1537 2 is refactorin
+1538 4 is refactorin
+1538 3 is compiling
+coder 3 will compile ld3 rd4 6th time for 60, he last compiled: 248 ago
+coder 1 released left dongle 1 right dongle 2
+1596 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1597 1 is debugging
+1598 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 58000
+coder 3 released left dongle 3 right dongle 4
+1600 3 is debugging
+1600 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+1656 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1657 5 is compiling
+coder 5 will compile ld5 rd1 4th time for 60, he last compiled: 363 ago
+1657 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 2000
+1658 1 is refactorin
+1659 2 is compiling
+coder 2 will compile ld2 rd3 6th time for 60, he last compiled: 246 ago
+1660 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1720 5 is debugging
+1721 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+coder 2 released left dongle 2 right dongle 3
+1722 2 is debugging
+1722 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 58000
+1722 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+1781 4 is compiling
+coder 4 will compile ld4 rd5 7th time for 60, he last compiled: 365 ago
+1781 5 is refactorin
+1782 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+1783 1 is compiling
+coder 1 will compile ld1 rd2 5th time for 60, he last compiled: 248 ago
+1783 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1842 4 is debugging
+1843 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 59000
+coder 1 released left dongle 1 right dongle 2
+1844 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1845 1 is debugging
+1845 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 59000
+1903 3 is compiling
+coder 3 will compile ld3 rd4 7th time for 60, he last compiled: 364 ago
+1903 4 is refactorin
+1905 1 is refactorin
+1906 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1906 5 is compiling
+coder 5 will compile ld5 rd1 5th time for 60, he last compiled: 249 ago
+coder 3 released left dongle 3 right dongle 4
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 58000
+coder 5 released left dongle 5 right dongle 1
+coder 2 will compile ld2 rd3 7th time for 60, he last compiled: 364 ago
+coder 2 released left dongle 2 right dongle 3
+==37816== 
+==37816== Use --history-level=approx or =none to gain increased speed, at
+==37816== the cost of reduced accuracy of conflicting-access information
+==37816== For lists of detected and suppressed errors, rerun with: -s
+==37816== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 7860 from 140)
+==37827== Helgrind, a thread error detector
+==37827== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==37827== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==37827== Command: ./codexion 5 800 60 60 60 5 60 fifo
+==37827== 
+Scheduler: fifo
+32 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 40 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 20000
+41 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 44 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 16000
+42 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 44 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 16000
+46 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 48 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 12000
+58 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+59 4 is compiling
+coder 4 will compile ld4 rd5 1th time for 60, he last compiled: 65 ago
+coder 4 released left dongle 4 right dongle 5
+122 4 is debugging
+123 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 58000
+182 3 is compiling
+coder 3 will compile ld3 rd4 1th time for 60, he last compiled: 187 ago
+184 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+243 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 60000
+244 3 is debugging
+248 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 6 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 54000
+305 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+306 4 is compiling
+coder 4 will compile ld4 rd5 2th time for 60, he last compiled: 246 ago
+307 2 is compiling
+coder 2 will compile ld2 rd3 1th time for 60, he last compiled: 312 ago
+308 3 is refactorin
+coder 4 released left dongle 4 right dongle 5
+367 4 is debugging
+coder 2 released left dongle 2 right dongle 3
+369 2 is debugging
+369 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+371 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 58000
+427 4 is refactorin
+429 2 is refactorin
+430 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+432 3 is compiling
+coder 3 will compile ld3 rd4 2th time for 60, he last compiled: 250 ago
+432 1 is compiling
+coder 1 will compile ld1 rd2 1th time for 60, he last compiled: 437 ago
+coder 3 released left dongle 3 right dongle 4
+coder 1 released left dongle 1 right dongle 2
+493 3 is debugging
+494 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+495 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+495 1 is debugging
+496 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+553 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+554 4 is compiling
+coder 4 will compile ld4 rd5 3th time for 60, he last compiled: 247 ago
+555 3 is refactorin
+556 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+557 2 is compiling
+coder 2 will compile ld2 rd3 2th time for 60, he last compiled: 249 ago
+558 1 is refactorin
+coder 4 released left dongle 4 right dongle 5
+616 4 is debugging
+616 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+###########coder 5 faced ld5 releasing rd1 ld5 > sleep for: 58000
+coder 2 released left dongle 2 right dongle 3
+618 2 is debugging
+619 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+676 4 is refactorin
+677 5 is compiling
+coder 5 will compile ld5 rd1 1th time for 60, he last compiled: 683 ago
+679 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+680 3 is compiling
+coder 3 will compile ld3 rd4 3th time for 60, he last compiled: 248 ago
+681 2 is refactorin
+coder 5 released left dongle 5 right dongle 1
+739 5 is debugging
+741 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 56000
+coder 3 released left dongle 3 right dongle 4
+743 3 is debugging
+743 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+747 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 129 < dgl cd: 60 
+748 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 54000
+coder 4 faced 1st rd4 cd: 59000
+801 5 is refactorin
+802 2 is compiling
+coder 2 will compile ld2 rd3 3th time for 60, he last compiled: 245 ago
+803 3 is refactorin
+807 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+807 4 is compiling
+coder 4 will compile ld4 rd5 4th time for 60, he last compiled: 253 ago
+coder 2 released left dongle 2 right dongle 3
+864 2 is debugging
+864 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+865 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 58000
+coder 4 released left dongle 4 right dongle 5
+868 4 is debugging
+923 1 is compiling
+coder 1 will compile ld1 rd2 2th time for 60, he last compiled: 491 ago
+924 2 is refactorin
+925 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 3000
+929 3 is compiling
+coder 3 will compile ld3 rd4 4th time for 60, he last compiled: 249 ago
+929 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+984 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 60000
+985 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 59000
+985 1 is debugging
+coder 3 released left dongle 3 right dongle 4
+990 3 is debugging
+990 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 59000
+1045 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 4000
+1046 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1046 5 is compiling
+coder 5 will compile ld5 rd1 2th time for 60, he last compiled: 369 ago
+1047 1 is refactorin
+1050 2 is compiling
+coder 2 will compile ld2 rd3 4th time for 60, he last compiled: 248 ago
+1051 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1108 5 is debugging
+1109 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+1110 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 56000
+coder 2 released left dongle 2 right dongle 3
+1112 2 is debugging
+1113 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+1168 4 is compiling
+coder 4 will compile ld4 rd5 5th time for 60, he last compiled: 360 ago
+1170 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 2000
+1171 5 is refactorin
+1173 1 is compiling
+coder 1 will compile ld1 rd2 3th time for 60, he last compiled: 249 ago
+1174 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1230 4 is debugging
+1230 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 58000
+coder 1 released left dongle 1 right dongle 2
+1234 1 is debugging
+1235 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+1237 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 57000
+1290 3 is compiling
+coder 3 will compile ld3 rd4 5th time for 60, he last compiled: 361 ago
+1291 4 is refactorin
+1295 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1295 5 is compiling
+coder 5 will compile ld5 rd1 3th time for 60, he last compiled: 248 ago
+1296 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+1353 3 is debugging
+1354 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+1355 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 57000
+coder 5 released left dongle 5 right dongle 1
+1357 5 is debugging
+1358 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+1413 2 is compiling
+coder 2 will compile ld2 rd3 5th time for 60, he last compiled: 362 ago
+1413 3 is refactorin
+1414 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 2000
+1418 5 is refactorin
+1418 4 is compiling
+coder 4 will compile ld4 rd5 6th time for 60, he last compiled: 250 ago
+coder 2 released left dongle 2 right dongle 3
+1475 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 57000
+1476 2 is debugging
+1477 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 55000
+coder 4 released left dongle 4 right dongle 5
+1481 4 is debugging
+1533 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 6000
+1534 1 is compiling
+coder 1 will compile ld1 rd2 4th time for 60, he last compiled: 362 ago
+1537 2 is refactorin
+1541 3 is compiling
+coder 3 will compile ld3 rd4 6th time for 60, he last compiled: 251 ago
+1542 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1596 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1597 1 is debugging
+1597 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 59000
+coder 3 released left dongle 3 right dongle 4
+1602 3 is debugging
+1603 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 59000
+1656 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1656 5 is compiling
+coder 5 will compile ld5 rd1 4th time for 60, he last compiled: 360 ago
+1657 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 5000
+1658 1 is refactorin
+1663 2 is compiling
+coder 2 will compile ld2 rd3 6th time for 60, he last compiled: 250 ago
+1663 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1719 5 is debugging
+1719 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+1721 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 57000
+coder 2 released left dongle 2 right dongle 3
+1724 2 is debugging
+1724 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 60000
+1778 4 is compiling
+coder 4 will compile ld4 rd5 7th time for 60, he last compiled: 360 ago
+1779 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 5000
+1779 5 is refactorin
+1784 2 is refactorin
+1785 1 is compiling
+coder 1 will compile ld1 rd2 5th time for 60, he last compiled: 250 ago
+coder 4 released left dongle 4 right dongle 5
+1839 4 is debugging
+1840 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 59000
+coder 1 released left dongle 1 right dongle 2
+1847 1 is debugging
+1847 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 58000
+1848 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+1899 3 is compiling
+coder 3 will compile ld3 rd4 7th time for 60, he last compiled: 357 ago
+1900 4 is refactorin
+1906 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1907 5 is compiling
+coder 5 will compile ld5 rd1 5th time for 60, he last compiled: 250 ago
+coder 3 released left dongle 3 right dongle 4
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 57000
+coder 5 released left dongle 5 right dongle 1
+coder 2 will compile ld2 rd3 7th time for 60, he last compiled: 358 ago
+coder 2 released left dongle 2 right dongle 3
+==37827== 
+==37827== Use --history-level=approx or =none to gain increased speed, at
+==37827== the cost of reduced accuracy of conflicting-access information
+==37827== For lists of detected and suppressed errors, rerun with: -s
+==37827== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8002 from 140)
+==37836== Helgrind, a thread error detector
+==37836== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==37836== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==37836== Command: ./codexion 5 800 60 60 60 5 60 fifo
+==37836== 
+Scheduler: fifo
+21 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 27 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 33000
+31 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 33 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 27000
+33 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 35 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 25000
+43 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 44 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 16000
+60 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+61 4 is compiling
+coder 4 will compile ld4 rd5 1th time for 60, he last compiled: 66 ago
+coder 4 released left dongle 4 right dongle 5
+128 4 is debugging
+130 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 54000
+185 3 is compiling
+coder 3 will compile ld3 rd4 1th time for 60, he last compiled: 190 ago
+189 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+246 3 is debugging
+246 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 60000
+250 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 56000
+306 3 is refactorin
+307 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+307 4 is compiling
+coder 4 will compile ld4 rd5 2th time for 60, he last compiled: 245 ago
+310 2 is compiling
+coder 2 will compile ld2 rd3 1th time for 60, he last compiled: 315 ago
+coder 4 released left dongle 4 right dongle 5
+373 4 is debugging
+coder 2 released left dongle 2 right dongle 3
+373 2 is debugging
+373 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 60000
+374 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+433 4 is refactorin
+433 2 is refactorin
+433 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+434 3 is compiling
+coder 3 will compile ld3 rd4 2th time for 60, he last compiled: 248 ago
+435 1 is compiling
+coder 1 will compile ld1 rd2 1th time for 60, he last compiled: 440 ago
+coder 3 released left dongle 3 right dongle 4
+495 3 is debugging
+496 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 59000
+coder 1 released left dongle 1 right dongle 2
+496 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 60000
+497 1 is debugging
+497 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+555 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+556 4 is compiling
+coder 4 will compile ld4 rd5 3th time for 60, he last compiled: 246 ago
+556 3 is refactorin
+557 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+557 2 is compiling
+coder 2 will compile ld2 rd3 2th time for 60, he last compiled: 248 ago
+558 1 is refactorin
+coder 4 released left dongle 4 right dongle 5
+616 4 is debugging
+617 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+###########coder 5 faced ld5 releasing rd1 ld5 > sleep for: 59000
+coder 2 released left dongle 2 right dongle 3
+619 2 is debugging
+620 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+678 5 is compiling
+coder 5 will compile ld5 rd1 1th time for 60, he last compiled: 683 ago
+679 4 is refactorin
+680 2 is refactorin
+681 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+683 3 is compiling
+coder 3 will compile ld3 rd4 3th time for 60, he last compiled: 249 ago
+coder 5 released left dongle 5 right dongle 1
+740 5 is debugging
+741 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+741 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 122 < dgl cd: 60 
+coder 3 released left dongle 3 right dongle 4
+744 3 is debugging
+746 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 57000
+747 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 57000
+801 5 is refactorin
+804 2 is compiling
+coder 2 will compile ld2 rd3 3th time for 60, he last compiled: 247 ago
+806 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+807 4 is compiling
+coder 4 will compile ld4 rd5 4th time for 60, he last compiled: 251 ago
+808 3 is refactorin
+coder 2 released left dongle 2 right dongle 3
+869 2 is debugging
+869 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 58000
+coder 4 released left dongle 4 right dongle 5
+871 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 57000
+872 4 is debugging
+929 1 is compiling
+coder 1 will compile ld1 rd2 2th time for 60, he last compiled: 494 ago
+931 2 is refactorin
+931 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+931 3 is compiling
+coder 3 will compile ld3 rd4 4th time for 60, he last compiled: 248 ago
+933 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+990 1 is debugging
+990 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 60000
+991 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 59000
+coder 3 released left dongle 3 right dongle 4
+992 3 is debugging
+993 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 59000
+1051 1 is refactorin
+1051 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 1000
+1051 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1052 5 is compiling
+coder 5 will compile ld5 rd1 2th time for 60, he last compiled: 374 ago
+1054 2 is compiling
+coder 2 will compile ld2 rd3 4th time for 60, he last compiled: 249 ago
+1054 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1112 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 59000
+1113 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+1113 5 is debugging
+coder 2 released left dongle 2 right dongle 3
+1114 2 is debugging
+1115 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+1172 4 is compiling
+coder 4 will compile ld4 rd5 5th time for 60, he last compiled: 366 ago
+1173 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 1000
+1174 5 is refactorin
+1174 1 is compiling
+coder 1 will compile ld1 rd2 3th time for 60, he last compiled: 245 ago
+1175 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1233 4 is debugging
+1234 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 59000
+coder 1 released left dongle 1 right dongle 2
+1235 1 is debugging
+1236 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1236 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 59000
+1293 3 is compiling
+coder 3 will compile ld3 rd4 5th time for 60, he last compiled: 363 ago
+1294 4 is refactorin
+1295 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1296 5 is compiling
+coder 5 will compile ld5 rd1 3th time for 60, he last compiled: 244 ago
+1297 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+1355 3 is debugging
+1355 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 59000
+1356 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 7 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 53000
+coder 5 released left dongle 5 right dongle 1
+1363 5 is debugging
+1364 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 57000
+1416 3 is refactorin
+1417 2 is compiling
+coder 2 will compile ld2 rd3 5th time for 60, he last compiled: 364 ago
+1418 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 3000
+1427 4 is compiling
+coder 4 will compile ld4 rd5 6th time for 60, he last compiled: 254 ago
+1428 5 is refactorin
+coder 2 released left dongle 2 right dongle 3
+1480 2 is debugging
+1481 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 59000
+1481 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+coder 4 released left dongle 4 right dongle 5
+1488 4 is debugging
+1540 1 is compiling
+coder 1 will compile ld1 rd2 4th time for 60, he last compiled: 365 ago
+1541 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 7000
+1541 2 is refactorin
+1548 3 is compiling
+coder 3 will compile ld3 rd4 6th time for 60, he last compiled: 254 ago
+1551 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1601 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1602 1 is debugging
+1602 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 59000
+coder 3 released left dongle 3 right dongle 4
+1613 3 is debugging
+1614 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 59000
+1662 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1662 5 is compiling
+coder 5 will compile ld5 rd1 4th time for 60, he last compiled: 365 ago
+1664 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 9000
+1668 1 is refactorin
+1673 2 is compiling
+coder 2 will compile ld2 rd3 6th time for 60, he last compiled: 255 ago
+1674 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1725 5 is debugging
+1726 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 59000
+1729 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 56000
+coder 2 released left dongle 2 right dongle 3
+1735 2 is debugging
+1736 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+1785 4 is compiling
+coder 4 will compile ld4 rd5 7th time for 60, he last compiled: 358 ago
+1786 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 9000
+1786 5 is refactorin
+1795 1 is compiling
+coder 1 will compile ld1 rd2 5th time for 60, he last compiled: 255 ago
+1796 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1846 4 is debugging
+1846 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 60000
+coder 1 released left dongle 1 right dongle 2
+1856 1 is debugging
+1857 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 59000
+1859 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 6 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 54000
+1906 4 is refactorin
+1907 3 is compiling
+coder 3 will compile ld3 rd4 7th time for 60, he last compiled: 360 ago
+1916 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1917 5 is compiling
+coder 5 will compile ld5 rd1 5th time for 60, he last compiled: 255 ago
+1918 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 58000
+coder 5 released left dongle 5 right dongle 1
+coder 2 will compile ld2 rd3 7th time for 60, he last compiled: 356 ago
+coder 2 released left dongle 2 right dongle 3
+==37836== 
+==37836== Use --history-level=approx or =none to gain increased speed, at
+==37836== the cost of reduced accuracy of conflicting-access information
+==37836== For lists of detected and suppressed errors, rerun with: -s
+==37836== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 7802 from 136)
+==37848== Helgrind, a thread error detector
+==37848== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==37848== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==37848== Command: ./codexion 5 800 60 60 60 5 60 fifo
+==37848== 
+Scheduler: fifo
+28 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 35 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 25000
+37 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 38 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 22000
+38 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 39 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 21000
+41 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 42 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 18000
+60 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+62 4 is compiling
+coder 4 will compile ld4 rd5 1th time for 60, he last compiled: 67 ago
+coder 4 released left dongle 4 right dongle 5
+129 4 is debugging
+131 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 54000
+188 3 is compiling
+coder 3 will compile ld3 rd4 1th time for 60, he last compiled: 192 ago
+191 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+250 3 is debugging
+251 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 57000
+253 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 56000
+309 2 is compiling
+coder 2 will compile ld2 rd3 1th time for 60, he last compiled: 314 ago
+311 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+312 4 is compiling
+coder 4 will compile ld4 rd5 2th time for 60, he last compiled: 250 ago
+315 3 is refactorin
+coder 2 released left dongle 2 right dongle 3
+371 2 is debugging
+372 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 58000
+coder 4 released left dongle 4 right dongle 5
+376 4 is debugging
+377 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 7 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 53000
+431 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 3000
+432 1 is compiling
+coder 1 will compile ld1 rd2 1th time for 60, he last compiled: 437 ago
+436 2 is refactorin
+437 3 is compiling
+coder 3 will compile ld3 rd4 2th time for 60, he last compiled: 248 ago
+438 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+494 1 is debugging
+495 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+497 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 56000
+coder 3 released left dongle 3 right dongle 4
+499 3 is debugging
+500 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+555 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 3000
+556 1 is refactorin
+557 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+558 5 is compiling
+coder 5 will compile ld5 rd1 1th time for 60, he last compiled: 562 ago
+562 2 is compiling
+coder 2 will compile ld2 rd3 2th time for 60, he last compiled: 252 ago
+563 3 is refactorin
+coder 5 released left dongle 5 right dongle 1
+620 5 is debugging
+620 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+622 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 57000
+coder 2 released left dongle 2 right dongle 3
+624 2 is debugging
+624 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+680 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 2000
+681 4 is compiling
+coder 4 will compile ld4 rd5 3th time for 60, he last compiled: 367 ago
+682 5 is refactorin
+683 1 is compiling
+coder 1 will compile ld1 rd2 2th time for 60, he last compiled: 251 ago
+687 2 is refactorin
+coder 4 released left dongle 4 right dongle 5
+754 4 is debugging
+coder 1 released left dongle 1 right dongle 2
+755 1 is debugging
+755 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 6 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 54000
+757 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 44000
+758 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 9 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 51000
+808 3 is compiling
+coder 3 will compile ld3 rd4 3th time for 60, he last compiled: 371 ago
+813 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+814 5 is compiling
+coder 5 will compile ld5 rd1 2th time for 60, he last compiled: 257 ago
+818 4 is refactorin
+819 1 is refactorin
+coder 3 released left dongle 3 right dongle 4
+874 3 is debugging
+874 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 60000
+coder 5 released left dongle 5 right dongle 1
+878 5 is debugging
+880 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 6 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 54000
+881 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 56000
+934 3 is refactorin
+935 2 is compiling
+coder 2 will compile ld2 rd3 3th time for 60, he last compiled: 373 ago
+935 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 1000
+937 4 is compiling
+coder 4 will compile ld4 rd5 4th time for 60, he last compiled: 255 ago
+938 5 is refactorin
+coder 2 released left dongle 2 right dongle 3
+996 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 59000
+996 2 is debugging
+997 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+coder 4 released left dongle 4 right dongle 5
+998 4 is debugging
+1055 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 3000
+1056 1 is compiling
+coder 1 will compile ld1 rd2 3th time for 60, he last compiled: 372 ago
+1057 2 is refactorin
+1059 3 is compiling
+coder 3 will compile ld3 rd4 4th time for 60, he last compiled: 250 ago
+1059 4 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1118 1 is debugging
+1119 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 59000
+1119 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+coder 3 released left dongle 3 right dongle 4
+1120 3 is debugging
+1122 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+1178 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 1000
+1179 1 is refactorin
+1180 2 is compiling
+coder 2 will compile ld2 rd3 4th time for 60, he last compiled: 245 ago
+1181 3 is refactorin
+1181 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1181 5 is compiling
+coder 5 will compile ld5 rd1 3th time for 60, he last compiled: 365 ago
+coder 2 released left dongle 2 right dongle 3
+1241 2 is debugging
+1241 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+coder 5 released left dongle 5 right dongle 1
+1242 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 59000
+1243 5 is debugging
+1243 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+1301 2 is refactorin
+1302 4 is compiling
+coder 4 will compile ld4 rd5 5th time for 60, he last compiled: 365 ago
+1304 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+1304 1 is compiling
+coder 1 will compile ld1 rd2 4th time for 60, he last compiled: 248 ago
+1306 5 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1365 4 is debugging
+1365 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 59000
+coder 1 released left dongle 1 right dongle 2
+1366 1 is debugging
+1366 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 60000
+1367 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1425 3 is compiling
+coder 3 will compile ld3 rd4 5th time for 60, he last compiled: 367 ago
+1427 1 is refactorin
+1427 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1428 5 is compiling
+coder 5 will compile ld5 rd1 4th time for 60, he last compiled: 246 ago
+1428 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+1487 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 59000
+1488 3 is debugging
+coder 5 released left dongle 5 right dongle 1
+1488 5 is debugging
+1489 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+1489 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+1547 2 is compiling
+coder 2 will compile ld2 rd3 5th time for 60, he last compiled: 367 ago
+1548 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+1548 4 is compiling
+coder 4 will compile ld4 rd5 6th time for 60, he last compiled: 244 ago
+1548 3 is refactorin
+1549 5 is refactorin
+coder 2 released left dongle 2 right dongle 3
+coder 4 released left dongle 4 right dongle 5
+1609 4 is debugging
+1609 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 58000
+1611 2 is debugging
+1611 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 57000
+1668 1 is compiling
+coder 1 will compile ld1 rd2 5th time for 60, he last compiled: 364 ago
+1669 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+1669 3 is compiling
+coder 3 will compile ld3 rd4 6th time for 60, he last compiled: 243 ago
+1671 4 is refactorin
+1672 2 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1730 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+1731 1 is debugging
+coder 3 released left dongle 3 right dongle 4
+1732 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 56000
+1734 3 is debugging
+1734 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 57000
+1790 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 1000
+1791 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1792 5 is compiling
+coder 5 will compile ld5 rd1 5th time for 60, he last compiled: 364 ago
+1793 1 is refactorin
+1793 2 is compiling
+coder 2 will compile ld2 rd3 6th time for 60, he last compiled: 246 ago
+coder 5 released left dongle 5 right dongle 1
+coder 2 released left dongle 2 right dongle 3
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 54000
+coder 4 will compile ld4 rd5 7th time for 60, he last compiled: 366 ago
+coder 4 released left dongle 4 right dongle 5
+==37848== 
+==37848== Use --history-level=approx or =none to gain increased speed, at
+==37848== the cost of reduced accuracy of conflicting-access information
+==37848== For lists of detected and suppressed errors, rerun with: -s
+==37848== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 7233 from 136)
+==37855== Helgrind, a thread error detector
+==37855== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==37855== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==37855== Command: ./codexion 5 800 60 60 60 5 60 fifo
+==37855== 
+Scheduler: fifo
+20 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 26 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 34000
+28 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 29 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 31000
+30 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 32 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 28000
+34 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 36 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 24000
+59 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+60 4 is compiling
+coder 4 will compile ld4 rd5 1th time for 60, he last compiled: 65 ago
+coder 4 released left dongle 4 right dongle 5
+123 4 is debugging
+123 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 58000
+183 3 is compiling
+coder 3 will compile ld3 rd4 1th time for 60, he last compiled: 188 ago
+184 4 is refactorin
+coder 3 released left dongle 3 right dongle 4
+244 3 is debugging
+244 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 59000
+245 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+304 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+305 4 is compiling
+coder 4 will compile ld4 rd5 2th time for 60, he last compiled: 244 ago
+309 2 is compiling
+coder 2 will compile ld2 rd3 1th time for 60, he last compiled: 314 ago
+310 3 is refactorin
+coder 4 released left dongle 4 right dongle 5
+369 4 is debugging
+coder 2 released left dongle 2 right dongle 3
+371 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+373 2 is debugging
+373 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 57000
+430 4 is refactorin
+431 1 is compiling
+coder 1 will compile ld1 rd2 1th time for 60, he last compiled: 436 ago
+432 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+433 3 is compiling
+coder 3 will compile ld3 rd4 2th time for 60, he last compiled: 250 ago
+434 2 is refactorin
+coder 1 released left dongle 1 right dongle 2
+492 1 is debugging
+493 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+coder 3 released left dongle 3 right dongle 4
+495 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 5 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 55000
+496 3 is debugging
+497 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 4 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 56000
+552 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 1000
+554 1 is refactorin
+555 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+556 4 is compiling
+coder 4 will compile ld4 rd5 3th time for 60, he last compiled: 247 ago
+557 3 is refactorin
+557 2 is compiling
+coder 2 will compile ld2 rd3 2th time for 60, he last compiled: 248 ago
+coder 4 released left dongle 4 right dongle 5
+618 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+###########coder 5 faced ld5 releasing rd1 ld5 > sleep for: 59000
+619 4 is debugging
+coder 2 released left dongle 2 right dongle 3
+620 2 is debugging
+621 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+678 5 is compiling
+coder 5 will compile ld5 rd1 1th time for 60, he last compiled: 684 ago
+680 4 is refactorin
+680 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+681 3 is compiling
+coder 3 will compile ld3 rd4 3th time for 60, he last compiled: 247 ago
+682 2 is refactorin
+coder 5 released left dongle 5 right dongle 1
+740 5 is debugging
+741 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 58000
+coder 3 released left dongle 3 right dongle 4
+743 3 is debugging
+744 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 137 < dgl cd: 60 
+756 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 45000
+758 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 17 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 43000
+801 5 is refactorin
+802 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+802 4 is compiling
+coder 4 will compile ld4 rd5 4th time for 60, he last compiled: 247 ago
+804 3 is refactorin
+804 2 is compiling
+coder 2 will compile ld2 rd3 3th time for 60, he last compiled: 246 ago
+coder 4 released left dongle 4 right dongle 5
+864 4 is debugging
+coder 2 released left dongle 2 right dongle 3
+866 2 is debugging
+867 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+867 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 59000
+925 4 is refactorin
+926 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+926 3 is compiling
+coder 3 will compile ld3 rd4 4th time for 60, he last compiled: 246 ago
+927 2 is refactorin
+927 1 is compiling
+coder 1 will compile ld1 rd2 2th time for 60, he last compiled: 496 ago
+coder 3 released left dongle 3 right dongle 4
+988 3 is debugging
+coder 1 released left dongle 1 right dongle 2
+988 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 59000
+989 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 59000
+990 1 is debugging
+990 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 57000
+1047 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+1048 4 is compiling
+coder 4 will compile ld4 rd5 5th time for 60, he last compiled: 244 ago
+1049 3 is refactorin
+1049 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+1049 2 is compiling
+coder 2 will compile ld2 rd3 4th time for 60, he last compiled: 246 ago
+1051 1 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1109 4 is debugging
+1110 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+###########coder 5 faced ld5 releasing rd1 ld5 > sleep for: 59000
+coder 2 released left dongle 2 right dongle 3
+1111 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+1111 2 is debugging
+1170 5 is compiling
+coder 5 will compile ld5 rd1 2th time for 60, he last compiled: 491 ago
+1170 4 is refactorin
+1171 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+1173 3 is compiling
+coder 3 will compile ld3 rd4 5th time for 60, he last compiled: 246 ago
+1175 2 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1233 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+coder 3 released left dongle 3 right dongle 4
+1235 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 125 < dgl cd: 60 
+1237 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 58000
+1241 3 is debugging
+1243 5 is debugging
+1244 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 9 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 51000
+1296 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+1296 4 is compiling
+coder 4 will compile ld4 rd5 6th time for 60, he last compiled: 248 ago
+1297 2 is compiling
+coder 2 will compile ld2 rd3 5th time for 60, he last compiled: 247 ago
+1302 3 is refactorin
+1306 5 is refactorin
+coder 4 released left dongle 4 right dongle 5
+1357 4 is debugging
+coder 2 released left dongle 2 right dongle 3
+1358 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 60000
+1358 2 is debugging
+1363 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 5 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 55000
+1417 4 is refactorin
+1418 1 is compiling
+coder 1 will compile ld1 rd2 3th time for 60, he last compiled: 492 ago
+1419 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+1419 3 is compiling
+coder 3 will compile ld3 rd4 6th time for 60, he last compiled: 246 ago
+1419 2 is refactorin
+coder 1 released left dongle 1 right dongle 2
+1479 1 is debugging
+1479 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 0 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 60000
+1480 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 59000
+coder 3 released left dongle 3 right dongle 4
+1481 3 is debugging
+1481 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 59000
+1539 1 is refactorin
+1540 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+1540 2 is compiling
+coder 2 will compile ld2 rd3 6th time for 60, he last compiled: 242 ago
+1541 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1541 5 is compiling
+coder 5 will compile ld5 rd1 3th time for 60, he last compiled: 372 ago
+1542 3 is refactorin
+coder 2 released left dongle 2 right dongle 3
+1601 2 is debugging
+coder 5 released left dongle 5 right dongle 1
+1602 5 is debugging
+1603 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 58000
+1604 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 58000
+1605 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 3 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 57000
+1661 2 is refactorin
+1663 5 is refactorin
+1663 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+1664 1 is compiling
+coder 1 will compile ld1 rd2 4th time for 60, he last compiled: 245 ago
+1664 4 is compiling
+coder 4 will compile ld4 rd5 7th time for 60, he last compiled: 367 ago
+coder 1 released left dongle 1 right dongle 2
+1725 1 is debugging
+coder 4 released left dongle 4 right dongle 5
+1726 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+1727 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 58000
+1728 4 is debugging
+1729 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+###########coder 3 faced ld4 releasing rd3 ld4 > sleep for: 57000
+1785 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+1786 5 is compiling
+coder 5 will compile ld5 rd1 4th time for 60, he last compiled: 244 ago
+1787 1 is refactorin
+1787 3 is compiling
+coder 3 will compile ld3 rd4 7th time for 60, he last compiled: 369 ago
+1789 4 is refactorin
+coder 5 released left dongle 5 right dongle 1
+1847 5 is debugging
+1848 1 has taken a dongle
+coder 1 took 1st rd1 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 1 faced 1st rd1 cd: 59000
+coder 3 released left dongle 3 right dongle 4
+1848 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 59000
+1849 3 is debugging
+1849 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+1908 5 is refactorin
+1908 4 has taken a dongle
+coder 4 took 2nd ld5 checking for 2nd cd
+1909 4 is compiling
+coder 4 will compile ld4 rd5 8th time for 60, he last compiled: 245 ago
+1909 3 is refactorin
+1911 2 is compiling
+coder 2 will compile ld2 rd3 7th time for 60, he last compiled: 372 ago
+coder 4 released left dongle 4 right dongle 5
+1972 4 is debugging
+coder 2 released left dongle 2 right dongle 3
+1972 2 is debugging
+1973 1 has taken a dongle
+coder 1 took 2nd ld2 checking for 2nd cd
+###########coder 1 faced ld2 releasing rd1 ld2 > sleep for: 59000
+1973 3 has taken a dongle
+coder 3 took 1st rd3 checking 1st cd
+rls_time_1st: 1 < dgl cd: 60 
+coder 3 faced 1st rd3 cd: 59000
+2032 1 is compiling
+coder 1 will compile ld1 rd2 5th time for 60, he last compiled: 369 ago
+2035 4 is refactorin
+2035 2 is refactorin
+2036 3 has taken a dongle
+coder 3 took 2nd ld4 checking for 2nd cd
+2037 3 is compiling
+coder 3 will compile ld3 rd4 8th time for 60, he last compiled: 249 ago
+coder 1 released left dongle 1 right dongle 2
+2095 1 is debugging
+2096 5 has taken a dongle
+coder 5 took 1st rd1 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 5 faced 1st rd1 cd: 58000
+coder 3 released left dongle 3 right dongle 4
+2101 3 is debugging
+2102 2 has taken a dongle
+coder 2 took 1st rd2 checking 1st cd
+rls_time_1st: 7 < dgl cd: 60 
+coder 2 faced 1st rd2 cd: 53000
+2102 4 has taken a dongle
+coder 4 took 1st rd4 checking 1st cd
+rls_time_1st: 2 < dgl cd: 60 
+coder 4 faced 1st rd4 cd: 58000
+2155 5 has taken a dongle
+coder 5 took 2nd ld5 checking for 2nd cd
+2156 5 is compiling
+coder 5 will compile ld5 rd1 5th time for 60, he last compiled: 370 ago
+2158 2 has taken a dongle
+coder 2 took 2nd ld3 checking for 2nd cd
+###########coder 2 faced ld3 releasing rd2 ld3 > sleep for: 1000
+coder 2 will compile ld2 rd3 8th time for 60, he last compiled: 252 ago
+coder 5 released left dongle 5 right dongle 1
+coder 4 took 2nd ld5 checking for 2nd cd
+###########coder 4 faced ld5 releasing rd4 ld5 > sleep for: 59000
+coder 2 released left dongle 2 right dongle 3
+coder 4 will compile ld4 rd5 9th time for 60, he last compiled: 370 ago
+coder 4 released left dongle 4 right dongle 5
+==37855== 
+==37855== Use --history-level=approx or =none to gain increased speed, at
+==37855== the cost of reduced accuracy of conflicting-access information
+==37855== For lists of detected and suppressed errors, rerun with: -s
+==37855== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8833 from 136)
+==37869== Helgrind, a thread error detector
+==37869== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==37869== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==37869== Command: ./codexion 5 800 60 60 60 5 60 fifo
+==37869== 
+==37869== 
+==37869== Process terminating with default action of signal 2 (SIGINT)
+==37869==    at 0x4912E51: __futex_abstimed_wait_common64 (futex-internal.c:57)
+==37869==    by 0x4912E51: __futex_abstimed_wait_common (futex-internal.c:87)
+==37869==    by 0x4912E51: __futex_abstimed_wait_cancelable64 (futex-internal.c:139)
+==37869==    by 0x4918882: __pthread_clockjoin_ex (pthread_join_common.c:102)
+==37869==    by 0x4850E13: ??? (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==37869==    by 0x109D25: main (main.c:193)
+==37869== ---Thread-Announcement------------------------------------------
+==37869== 
+==37869== Thread #6 was created
+==37869==    at 0x49A3B53: clone (clone.S:76)
+==37869==    by 0x49A3CD2: __clone_internal_fallback (clone-internal.c:64)
+==37869==    by 0x49A3CD2: __clone_internal (clone-internal.c:109)
+==37869==    by 0x491662F: create_thread (pthread_create.c:297)
+==37869==    by 0x4917284: pthread_create@@GLIBC_2.34 (pthread_create.c:836)
+==37869==    by 0x4854975: ??? (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==37869==    by 0x109CC2: main (main.c:186)
+==37869== 
+==37869== ----------------------------------------------------------------
+==37869== 
+==37869== Thread #6: Exiting thread still holds 1 lock
+==37869==    at 0x4913050: futex_wait (futex-internal.h:146)
+==37869==    by 0x4913050: __lll_lock_wait (lowlevellock.c:49)
+==37869==    by 0x491A1E0: lll_mutex_lock_optimized (pthread_mutex_lock.c:48)
+==37869==    by 0x491A1E0: pthread_mutex_lock@@GLIBC_2.2.5 (pthread_mutex_lock.c:93)
+==37869==    by 0x4851274: ??? (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==37869==    by 0x1096FF: take_dongles (main.c:82)
+==37869==    by 0x10986C: routine (main.c:107)
+==37869==    by 0x4854B7A: ??? (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==37869==    by 0x4916B83: start_thread (pthread_create.c:447)
+==37869==    by 0x49A3B63: clone (clone.S:100)
+==37869== 
+==37869== ---Thread-Announcement------------------------------------------
+==37869== 
+==37869== Thread #3 was created
+==37869==    at 0x49A3B53: clone (clone.S:76)
+==37869==    by 0x49A3CD2: __clone_internal_fallback (clone-internal.c:64)
+==37869==    by 0x49A3CD2: __clone_internal (clone-internal.c:109)
+==37869==    by 0x491662F: create_thread (pthread_create.c:297)
+==37869==    by 0x4917284: pthread_create@@GLIBC_2.34 (pthread_create.c:836)
+==37869==    by 0x4854975: ??? (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==37869==    by 0x109CC2: main (main.c:186)
+==37869== 
+==37869== ----------------------------------------------------------------
+==37869== 
+==37869== Thread #3: Exiting thread still holds 2 locks
+==37869==    at 0x4966BDF: clock_nanosleep@@GLIBC_2.17 (clock_nanosleep.c:78)
+==37869==    by 0x4973B26: nanosleep (nanosleep.c:25)
+==37869==    by 0x49A385B: usleep (usleep.c:31)
+==37869==    by 0x109977: routine (main.c:118)
+==37869==    by 0x4854B7A: ??? (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==37869==    by 0x4916B83: start_thread (pthread_create.c:447)
+==37869==    by 0x49A3B63: clone (clone.S:100)
+==37869== 
+==37869== ---Thread-Announcement------------------------------------------
+==37869== 
+==37869== Thread #5 was created
+==37869==    at 0x49A3B53: clone (clone.S:76)
+==37869==    by 0x49A3CD2: __clone_internal_fallback (clone-internal.c:64)
+==37869==    by 0x49A3CD2: __clone_internal (clone-internal.c:109)
+==37869==    by 0x491662F: create_thread (pthread_create.c:297)
+==37869==    by 0x4917284: pthread_create@@GLIBC_2.34 (pthread_create.c:836)
+==37869==    by 0x4854975: ??? (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==37869==    by 0x109CC2: main (main.c:186)
+==37869== 
+==37869== ----------------------------------------------------------------
+==37869== 
+==37869== Thread #5: Exiting thread still holds 2 locks
+==37869==    at 0x4966BDF: clock_nanosleep@@GLIBC_2.17 (clock_nanosleep.c:78)
+==37869==    by 0x4973B26: nanosleep (nanosleep.c:25)
+==37869==    by 0x49A385B: usleep (usleep.c:31)
+==37869==    by 0x109977: routine (main.c:118)
+==37869==    by 0x4854B7A: ??? (in /usr/libexec/valgrind/vgpreload_helgrind-amd64-linux.so)
+==37869==    by 0x4916B83: start_thread (pthread_create.c:447)
+==37869==    by 0x49A3B63: clone (clone.S:100)
+==37869== 
+==37869== 
+==37869== Use --history-level=approx or =none to gain increased speed, at
+==37869== the cost of reduced accuracy of conflicting-access information
+==37869== For lists of detected and suppressed errors, rerun with: -s
+==37869== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 2147 from 133)

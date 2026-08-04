@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:14 by itemlali          #+#    #+#             */
-/*   Updated: 2026/08/04 11:18:45 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/04 15:38:51 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,6 @@ typedef struct s_dongle
 	pthread_mutex_t		dongle_lock;
 	pthread_cond_t		cond;
 	long			last_released;
-	int					in_use;
 	t_coder_queue		*min_heap;
 	int					heap_size;
 }						t_dongle;
