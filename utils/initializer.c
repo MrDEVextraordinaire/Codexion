@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 00:47:15 by itemlali          #+#    #+#             */
-/*   Updated: 2026/08/04 15:38:58 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/09 18:11:14 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static t_data	*dongle_init_loop(t_data *data)
 	while (i < data->config->number_of_coders)
 	{
 		data->dongles[i].id = i + 1;
-		data->dongles[i].last_released = current_time();
+		data->dongles[i].last_released = 0;
 		data->dongles[i].heap_size = 0;
 		data->dongles[i].min_heap = malloc(
 				sizeof(t_coder_queue) * data->config->number_of_coders);
@@ -54,10 +54,9 @@ static t_data	*dongle_init_loop(t_data *data)
 		if (pthread_mutex_init(&(data->dongles[i].dongle_lock), NULL) != 0)
 			return (destroy_partial_dongle(data, i, PHASE_HEAP), NULL);
 		else
-		if (pthread_cond_init(&data->dongles[i].cond, NULL) != 0)
+		if (pthread_cond_init(&data->dongles[i].dongle_available, NULL) != 0)
 			return (destroy_partial_dongle(data, i, PHASE_MUTEX), NULL);
 		else{
-
 		}
 		i++;
 	}

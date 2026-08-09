@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:28 by itemlali          #+#    #+#             */
-/*   Updated: 2026/08/04 15:35:54 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/09 16:50:13 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ int check_sim_over(t_data *data)
 	pthread_mutex_unlock(&data->burnout_lock);
 	return status;
 }
-
 void release_dongles(t_coder *coder)
 {
 	coder->left_dongle->last_released = current_time();
@@ -178,6 +177,9 @@ int	main(int argc, char **argv)
 	}
 	pthread_mutex_init(&data->burnout_lock, NULL);
 	pthread_mutex_init(&data->print_lock, NULL);
+	pthread_mutex_lock(&data->print_lock);
+	printf("new cycle\n");
+	pthread_mutex_unlock(&data->print_lock);
 	data->simulation_over = 0;
 	i = 0;
 	data->start_time = current_time();
