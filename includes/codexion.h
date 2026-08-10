@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:14 by itemlali          #+#    #+#             */
-/*   Updated: 2026/08/09 17:14:35 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/10 02:09:41 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,22 +68,22 @@ typedef struct s_coder
 	t_data				*data;
 }						t_coder;
 
-typedef struct s_dongle
-{
-	int					id;
-	pthread_mutex_t		dongle_lock;
-	pthread_cond_t		dongle_available;
-	long			last_released;
-	t_coder_queue		*min_heap;
-	int					heap_size;
-}						t_dongle;
-
 typedef struct s_coder_queue
 {
 	int					coder_id;
 	long			deadline;
 	long			request_time;
 }						t_coder_queue;
+
+typedef struct s_dongle
+{
+	int					id;
+	pthread_mutex_t		dongle_lock;
+	pthread_cond_t		dongle_available;
+	long			last_released;
+	t_coder_queue		*queue;
+	int					queue_size;
+}						t_dongle;
 
 typedef struct s_config
 {

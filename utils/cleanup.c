@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/12 04:55:50 by itemlali          #+#    #+#             */
-/*   Updated: 2026/08/09 18:21:49 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/10 02:11:30 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void	destroy_partial_dongle(t_data *data, int i, t_init_phase phase)
 {
 	if (phase >= PHASE_HEAP)
-		free(data->dongles[i].min_heap);
+		free(data->dongles[i].queue);
 	if (phase >= PHASE_MUTEX)
 		pthread_mutex_destroy(&(data->dongles[i].dongle_lock));
 	if (phase >= PHASE_FULL)
@@ -28,7 +28,7 @@ void	clean_dongle_struct(t_data *data, int i)
 {
 	while (--i >= 0)
 	{
-		free(data->dongles[i].min_heap);
+		free(data->dongles[i].queue);
 		pthread_mutex_destroy(&(data->dongles[i].dongle_lock));
 		pthread_cond_destroy(&data->dongles[i].dongle_available);
 	}
@@ -47,8 +47,8 @@ void	free_all(t_data *data)
 	i = 0;
 	while (i < data->config->number_of_coders)
 	{
-		free(data->dongles[i].min_heap);
-		data->dongles[i].min_heap = NULL;
+		free(data->dongles[i].queue);
+		data->dongles[i].queue = NULL;
 		pthread_mutex_destroy(&(data->dongles[i].dongle_lock));
 		pthread_cond_destroy(&data->dongles[i].dongle_available);
 		i++;

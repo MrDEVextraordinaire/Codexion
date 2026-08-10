@@ -6,7 +6,7 @@
 /*   By: itemlali <itemlali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:56:28 by itemlali          #+#    #+#             */
-/*   Updated: 2026/08/09 16:50:13 by itemlali         ###   ########.fr       */
+/*   Updated: 2026/08/10 00:32:57 by itemlali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,14 @@ void take_dongles(t_coder *coder)
 {
 	t_dongle *first;
 	t_dongle *second;
-	long rls_time_1st;
-	long rls_time_2nd;
-	
+	long time_free_1;
+	long time_free_2;
+	long wait1;
+	long wait2;
+	long wait_max;
+	long cooldown;
+	long now;
+
 	if (coder->left_dongle->id < coder->right_dongle->id)
 	{
 		first = coder->left_dongle;
@@ -64,33 +69,29 @@ void take_dongles(t_coder *coder)
 	}
 	pthread_mutex_lock(&first->dongle_lock);
 	safe_print(coder, "has taken a dongle");
-	pthread_mutex_lock(&coder->data->print_lock);
-	printf("coder %d took 1st rd%d checking 1st cd\n",coder->id, first->id);
-	pthread_mutex_unlock(&coder->data->print_lock);
-	rls_time_1st = current_time() - first->last_released;
-	pthread_mutex_lock(&coder->data->print_lock);
-	printf("rls_time_1st: %ld < dgl cd: %ld \n", rls_time_1st, coder->data->config->dongle_cooldown);
-	pthread_mutex_unlock(&coder->data->print_lock);
-	if (rls_time_1st < coder->data->config->dongle_cooldown)
-	{
-		pthread_mutex_lock(&coder->data->print_lock);
-		printf("coder %d faced 1st rd%d cd: %ld\n",coder->id, first->id , ((coder->data->config->dongle_cooldown - rls_time_1st) * 1000));
-		pthread_mutex_unlock(&coder->data->print_lock);
-		usleep((coder->data->config->dongle_cooldown - rls_time_1st) * 1000);
-	}
 	pthread_mutex_lock(&second->dongle_lock);
 	safe_print(coder, "has taken a dongle");
-	pthread_mutex_lock(&coder->data->print_lock);
-	printf("coder %d took 2nd ld%d checking for 2nd cd\n",coder->id,second->id);
-	pthread_mutex_unlock(&coder->data->print_lock);
-	rls_time_2nd = current_time() - second->last_released;
-	if (rls_time_2nd < coder->data->config->dongle_cooldown)
+	cooldown = coder->data->config->dongle_cooldown;
+	now = current_time();
+	if (first->last_released != 0)
 	{
-		pthread_mutex_lock(&coder->data->print_lock);
-		printf("###########coder %d faced ld%d releasing rd%d ld%d > sleep for: %ld\n",coder->id, second->id ,first->id, second->id, ((coder->data->config->dongle_cooldown - rls_time_2nd) * 1000));
-		pthread_mutex_unlock(&coder->data->print_lock);
-		usleep((coder->data->config->dongle_cooldown - rls_time_2nd) * 1000);
+		time_free_1 = now - first->last_released;
+		wait1 = (cooldown - time_free_1) * 1000;
 	}
+	else
+		wait1 = 0;
+	if (second->last_released != 0)
+	{
+		time_free_2 = now - second->last_released;
+		wait2 = (cooldown - time_free_2) * 1000;
+	}
+	else
+		wait2 = 0;
+	wait_max = wait1;
+	if (wait2 > wait1)
+		wait_max = wait2;
+	usleep(wait_max);
+
 }
 
 void	*routine(void *arg)
